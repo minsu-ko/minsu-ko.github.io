@@ -1,173 +1,84 @@
-/* /assets/css/style.css */
-
-/*------------------------------------------------------------
-  1) Root variables & Reset
-------------------------------------------------------------*/
-:root {
-  --font-body: "Inter", sans-serif;
-  --color-bg-light: #f5f5f5;
-  --color-text-light: #222;
-  --color-bg-dark: #111;
-  --color-text-dark: #f1f1f1;
-  --link-color: #0066cc;
-  --link-hover: #004499;
-}
-
-/* A VERY simple normalize/reset: */
-*,
-*::before,
-*::after {
+/* ─────────────────────────────────────────────────────────────
+   1) 기본 전체 스타일
+──────────────────────────────────────────────────────────── */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* Default font & background in light mode */
-body {
-  font-family: var(--font-body);
   line-height: 1.6;
-  background-color: var(--color-bg-light);
-  color: var(--color-text-light);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  background-color: #f9f9f9;
 }
 
-/* Dark‐mode override */
-body.dark-mode {
-  background-color: var(--color-bg-dark);
-  color: var(--color-text-dark);
+/* ─────────────────────────────────────────────────────────────
+   2) 헤더 / 내비게이션
+──────────────────────────────────────────────────────────── */
+header {
+  background-color: #333;
+  padding: 1rem 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-/* Container for fixed‐width centering */
-.container {
+/* ─────────────────────────────────────────────────────────────
+   3) 메인 컨텐츠
+──────────────────────────────────────────────────────────── */
+main {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-/*------------------------------------------------------------
-  2) Header + Nav Styles
-------------------------------------------------------------*/
-.site-header {
-  background-color: transparent;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 2rem;
-}
-.site-header .container.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Social icons (left) */
-.social-icons ul {
-  list-style: none;
-  display: flex;
-  gap: 0.5rem;
-}
-.social-icons a {
-  font-size: 1.2rem;
-  color: var(--color-text-light);
-  text-decoration: none;
-}
-body.dark-mode .social-icons a {
-  color: var(--color-text-dark);
-}
-.social-icons a:hover {
-  color: var(--link-hover);
-}
-
-/* Main nav (right) */
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-.main-nav a {
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--color-text-light);
-}
-body.dark-mode .main-nav a {
-  color: var(--color-text-dark);
-}
-.main-nav a:hover {
-  color: var(--link-hover);
-}
-#theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: var(--color-text-light);
-}
-body.dark-mode #theme-toggle {
-  color: var(--color-text-dark);
-}
-
-/*------------------------------------------------------------
-  3) Content Styles (for index.md)
-------------------------------------------------------------*/
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 800;
-}
-h2 {
-  font-size: 1.75rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-weight: 600;
-}
-p {
-  margin-bottom: 1rem;
-}
-
-/* Right‐side images (two stacked) on homepage */
-.home‐images {
-  float: right;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-left: 1.5rem;
-}
-.home‐images img {
-  max-width: 250px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
-/* Caption beneath an image */
-.caption {
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   4) 기사(포스트) 날짜 및 목록
+──────────────────────────────────────────────────────────── */
+.news-list ul {
+  list-style: none;
+  padding: 0;
+}
+.news-list li {
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+.news-list .post-date {
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   5) 푸터
+──────────────────────────────────────────────────────────── */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
   font-size: 0.9rem;
   color: #666;
-  text-align: center;
-  margin-top: 0.25rem;
-}
-
-/* Clear floats at bottom of content */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*------------------------------------------------------------
-  4) Footer Styles
-------------------------------------------------------------*/
-.site-footer {
-  margin-top: 4rem;
-  padding: 1rem 0;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-  text-align: center;
-}
-body.dark-mode .site-footer {
-  border-top-color: #444;
-}
-
-a {
-  color: var(--link-color);
-}
-a:hover {
-  color: var(--link-hover);
 }
