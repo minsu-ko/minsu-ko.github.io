@@ -1,0 +1,32 @@
+# /_data/social_links.yml
+# Each entry has:
+#   - title: a small label (for alt-text or future tooltip)
+#   - url: the link to open
+#   - icon: the name of the icon (we’ll use Font Awesome SVGs or simple inline SVG)
+#
+# Note: For simplicity, I'm just listing classic targets. You can swap in FontAwesome
+#       or your own inline‐SVG icons in the header include.
+
+- title: "Email"
+  url: "mailto:your.email@example.com"
+  icon: "envelope"       # we’ll map this to an inline SVG in header.html
+
+- title: "Google Scholar"
+  url: "https://scholar.google.com/citations?user=YOUR_ID"
+  icon: "graduation-cap"
+
+- title: "GitHub"
+  url: "https://github.com/<your-github-username>"
+  icon: "github"
+
+- title: "X"
+  url: "https://twitter.com/<your-twitter-handle>"
+  icon: "twitter"
+
+- title: "LinkedIn"
+  url: "https://www.linkedin.com/in/<your-linkedin-id>"
+  icon: "linkedin"
+
+- title: "ORCID"
+  url: "https://orcid.org/0000-0000-0000-0000"
+  icon: "id-badge"

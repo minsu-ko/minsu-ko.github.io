@@ -1,0 +1,52 @@
+<!-- /_includes/header.html -->
+<header class="site-header">
+  <div class="container header-top">
+    <!-- Left: Social icons (email, GitHub, X, LinkedIn, ORCID) -->
+    <nav class="social-icons">
+      <ul>
+        {%- for item in site.data.social_links -%}
+          <li>
+            <a href="{{ item.url }}" aria-label="{{ item.title }}" target="_blank" rel="noopener noreferrer">
+              <!-- 
+                You can swap this <i> tag with an inline SVG from Font Awesome or 
+                any other library. Here we'll use Font Awesome 6 SVG (CDN).
+              -->
+              <i class="fa fa-{{ item.icon }}"></i>
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    <!-- Right: main navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="{{ "/" | relative_url }}">me</a></li>
+        <li><a href="{{ "/cv" | relative_url }}">cv</a></li>
+        <li><a href="{{ "/news" | relative_url }}">news</a></li>
+        <!-- Dark mode toggle button -->
+        <li>
+          <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Simple dark‐mode toggle script
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector("#theme-toggle");
+    const root = document.documentElement;
+
+    // Load saved preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") root.classList.add("dark-mode");
+
+    btn.addEventListener("click", () => {
+      root.classList.toggle("dark-mode");
+      const mode = root.classList.contains("dark-mode") ? "dark" : "light";
+      localStorage.setItem("theme", mode);
+    });
+  });
+</script>
