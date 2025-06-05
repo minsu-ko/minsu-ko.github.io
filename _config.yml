@@ -1,0 +1,24 @@
+# /_config.yml
+
+# ----------------------------------------------------------------
+# Basic Jekyll Settings
+# ----------------------------------------------------------------
+title: "MinSu Ko"                  # Site title
+email: "komin0310@kaist.ac.kr"               # (optional) site admin’s contact
+description: "Master student at KAIST Physics"  
+baseurl: ""                                   # if you host at <username>.github.io, leave as ""
+url: "https://minsu-ko.github.io"  # <-- Change to your GitHub Pages URL
+
+# Build settings:
+markdown: kramdown
+theme: ""     # we’re using our own layouts; leave theme blank
+plugins: []   # no plugins needed for this simple site
+
+# Collections / directories
+# (we only have index.md and the includes/layouts defined below)
+# ----------------------------------------------------------------
+
+# ----------------------------------------------------------------
+# Navigation / Social Links Data
+# We’ll store social URLs in _data/social_links.yml
+# ----------------------------------------------------------------
