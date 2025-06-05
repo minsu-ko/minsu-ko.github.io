@@ -11,7 +11,7 @@ url: "https://minsu-ko.github.io"  # <-- Change to your GitHub Pages URL
 
 # Build settings:
 markdown: kramdown
-theme: ""     # we’re using our own layouts; leave theme blank
+# theme: ""     # we’re using our own layouts; leave theme blank
 plugins: []   # no plugins needed for this simple site
 
 # Collections / directories
