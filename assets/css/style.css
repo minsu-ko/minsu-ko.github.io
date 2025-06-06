@@ -340,7 +340,6 @@ nav ul li.social-icon {
   margin-left: 0.5rem;    /* 텍스트 링크와 간격 */
   margin-right: 0.5rem;   /* 양쪽 간격을 줄여서 아이콘들 모이게 */
 }
-
 nav ul li.social-icon a img {
   width: 24px;            /* 원하는 아이콘 가로 크기 */
   height: 24px;           /* 세로 크기를 동일하게 하면 정비례 */
