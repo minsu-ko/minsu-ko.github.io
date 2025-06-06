@@ -1,22 +1,14 @@
 ---
 layout: default
 ---
-
 <article class="gallery-page">
   <h1>{{ page.title }}</h1>
-
-  <!-- 여기서 page.content(=Markdown 본문)가 삽입됩니다 -->
-  <div class="gallery-description">
-    {{ content }}
-  </div>
-
-  <!-- 이미지 그리드 예시 -->
   <div class="gallery-container">
-    <!-- 예시로 두 장 이미지를 넣어 보았습니다.
-         실제로는 assets/images/ 하위에 이미지를 두고 
-         src 경로를 바꿔 주세요. -->
-    <img src="{{ '/assets/images/photo1.jpg' | relative_url }}" alt="Photo 1" />
-    <img src="{{ '/assets/images/photo2.jpg' | relative_url }}" alt="Photo 2" />
-    <!-- 필요하면 추가 반복 -->
+    {% for item in site.data.gallery %}
+      <figure class="gallery-item">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.caption }}">
+        <figcaption>{{ item.caption }}</figcaption>
+      </figure>
+    {% endfor %}
   </div>
 </article>
