@@ -1,12 +1,18 @@
 ---
-layout: default
-title: Home
+layout: page
+title: About Me
 ---
 
-<h1>환영합니다!</h1>
-<p>나의 GitHub Pages 블로그에 오신 것을 환영합니다.</p>
-<ul>
-  <li><a href="{{ '/me.html' | relative_url }}">Me</a></li>
-  <li><a href="{{ '/cv.html' | relative_url }}">CV</a></li>
-  <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
-</ul>
+## 나에 대하여
+
+여기에 자신의 프로필, 소개글, 연락처 등을 자유롭게 작성하세요.  
+예시:
+
+- 이름: 홍길동  
+- 소속: ABC 대학교 물리학과  
+- 관심 분야: 전파 천문학, RF 회로 설계  
+- 이메일: example@domain.com  
+
+원하는 만큼 Markdown 문법으로 자유롭게 꾸며도 됩니다.
+
+
