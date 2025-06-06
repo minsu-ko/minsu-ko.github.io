@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: MinSu Ko
 ---
 
 ## 나에 대하여

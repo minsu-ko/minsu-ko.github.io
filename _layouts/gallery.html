@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="gallery-page">
+  <h1>{{ page.title }}</h1>
+  <div class="gallery-container">
+    {% for item in site.data.gallery %}
+      <figure class="gallery-item">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.caption }}">
+        <figcaption>{{ item.caption }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</article>
