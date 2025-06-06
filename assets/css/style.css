@@ -313,3 +313,41 @@ footer {
     width: 80%;               /* 화면 폭의 80% */
   }
 }
+/* ─────────────────────────────────────────────────────────────
+   네비게이션 바의 소셜 아이콘 스타일
+──────────────────────────────────────────────────────────── */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 아이콘 전용 클래스(위에 <li class="social-icon"> 추가) */
+nav ul li.social-icon {
+  margin-left: 0.5rem;    /* 텍스트 링크와 간격 */
+  margin-right: 0.5rem;   /* 양쪽 간격을 줄여서 아이콘들 모이게 */
+}
+
+nav ul li.social-icon a img {
+  width: 24px;            /* 원하는 아이콘 가로 크기 */
+  height: 24px;           /* 세로 크기를 동일하게 하면 정비례 */
+  vertical-align: middle; /* 텍스트와 함께 있을 때 세로 중앙 정렬 */
+}
+
+/* 호버할 때 약간 불투명도를 떨어뜨려 시각적 피드백 주기(선택사항) */
+nav ul li.social-icon a:hover img {
+  opacity: 0.8;
+}
