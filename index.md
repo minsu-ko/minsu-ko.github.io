@@ -9,14 +9,14 @@ title: MinSu Ko
   <!-- 1) 왼쪽 칸: markdown="1" 추가 -->
   <div class="about-text" markdown="1">
 
-    Master-Doctoral integrated program at
-    Department of Physics, Korea Advanced Institute of Sci. and Tech. (KAIST)
+  Master-Doctoral integrated program (1st year) at
+  Department of Physics, Korea Advanced Institute of Sci. and Tech. (KAIST)
  
-    Interested in...
-    Experimental cosmology
-    Beyond Standard Model physics
-    Radio astronomical instruments
-    Superconducting & low noise systems
+  Interested in...
+  - Experimental cosmology
+  - Beyond Standard Model physics
+  - Radio astronomical instruments
+  - Superconducting & low noise systems
 
   </div>
 
