@@ -10,8 +10,10 @@ body {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   2) 헤더 / 내비게이션
+   2) 헤더 / 상단 내비게이션 (오직 header 내부 nav에만 적용)
 ──────────────────────────────────────────────────────────── */
+/* 모든 nav ul에 적용되던 기존 스타일(nav ul { display: flex; … })을
+   header nav ul로 한정해서, sidebar nav ul에는 적용되지 않게 변경했습니다. */
 header {
   background-color: #333;
   padding: 1rem 0;
@@ -22,7 +24,7 @@ header {
   z-index: 100;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -30,22 +32,22 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
+header nav ul li {
   margin: 0 1rem;
 }
 
-nav ul li a {
+header nav ul li a {
   color: #fff;           /* 상단 메뉴 글자(흰색) */
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
 }
 
 /* ─────────────────────────────────────────────────────────────
-   3) 메인 컨텐츠
+   3) 메인 컨텐츠 (공통)
 ──────────────────────────────────────────────────────────── */
 main {
   max-width: 800px;
@@ -63,7 +65,7 @@ h1 {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   4) 게시물(포스트) 날짜 및 목록
+   4) 포스트(News) 목록 스타일
 ──────────────────────────────────────────────────────────── */
 .news-list ul {
   list-style: none;
@@ -96,26 +98,26 @@ footer {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   6) Gallery 전용 스타일 (3열 레이아웃)
+   6) Gallery 전용 스타일 (3열 레이아웃 + 사진 크게, 간격 좁힘)
 ──────────────────────────────────────────────────────────── */
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 항상 3열 */
-  gap: 1rem;
-  margin-top: 5rem; /* 상단 헤더 공간을 확보 */
-  padding: 0 1rem;  /* 좌우 여백 */
+  gap: 0.5rem;                           /* 간격을 0.5rem으로 좁혀서 사진 간 거리를 줄임 */
+  margin-top: 5rem;  /* 상단 헤더 공간 확보 */
+  padding: 0 1rem;   /* 좌우 여백 */
 }
 
 .gallery-item {
   background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 0.5rem;
+  padding: 0.5rem;   /* 카드 내부 여백 유지 */
   text-align: center;
 }
 
 .gallery-item img {
-  width: 100%;    /* 칸 너비를 100%로 꽉 채움 */
+  width: 100%;       /* 칸 너비를 100%로 꽉 채워서 크게 보임 */
   height: auto;
   border-radius: 4px;
 }
@@ -127,7 +129,7 @@ footer {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   7) CV 전용 스타일 (두 열 레이아웃 + 사이드바)
+   7) CV 전용 스타일 (두 열 레이아웃 + 사이드바 정상 표시)
 ──────────────────────────────────────────────────────────── */
 .cv-container {
   display: flex;
@@ -137,19 +139,20 @@ footer {
   padding: 0 1rem;         /* 좌우 여백 */
 }
 
-/* 왼쪽 사이드바 */
 .sidebar {
   width: 200px;
   flex-shrink: 0;            /* 축소 금지 */
   margin-right: 2rem;        /* 오른쪽 콘텐츠와 간격 */
   position: sticky;
-  top: 80px;                 /* 헤더 높이(60px) + 약간의 여백(20px) */
+  top: 80px;                 /* 헤더 높이(≈60px) + 여유(≈20px) */
 }
 
+/* sidebar 내부 nav ul은 block으로 처리해서, header nav ul의 flex 스타일이 적용되지 않도록 함 */
 .sidebar nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: block;
 }
 
 .sidebar nav ul li {
@@ -158,13 +161,13 @@ footer {
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #333 !important;    /* 흰색 배경에서 안 보이는 경우 대비 */
+  color: #333 !important;    /* 흰색 배경에서 확실히 보이는 진한 회색 */
   font-weight: bold;
   font-size: 1rem;
 }
 
 .sidebar nav ul li a:hover {
-  color: #5e34f5 !important; /* 보라색으로 호버 효과 */
+  color: #5e34f5 !important; /* 보라색으로 호버 강조 */
 }
 
 /* 오른쪽 메인 콘텐츠 */
@@ -176,7 +179,7 @@ footer {
   margin-top: 0;
   font-size: 2.5rem;
   color: #333;
-  border-bottom: 2px solid #5e34f5;  /* 강조색(보라) 아래선 */
+  border-bottom: 2px solid #5e34f5;  /* 보라색 강조선 */
   padding-bottom: 0.5rem;
 }
 
@@ -208,7 +211,7 @@ footer {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* CV: 사이드바를 맨 위로 보내고 펼치기 */
+  /* CV: 사이드바를 맨 위로 보내고 세로 정렬 */
   .cv-container {
     flex-direction: column;
     margin-top: 5rem; /* 여전히 헤더 공간 확보 */
