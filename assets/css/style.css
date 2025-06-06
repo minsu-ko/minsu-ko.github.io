@@ -46,14 +46,17 @@ header nav ul li a:hover {
 
 /* ─────────────────────────────────────────────────────────────
    3) 메인 컨텐츠 (공통)
+   - 흰 배경, 박스 테두리, 그림자 제거
+   - 콘텐츠 폭을 더 넓게 사용
 ──────────────────────────────────────────────────────────── */
 main {
-  max-width: 800px;
-  margin: 5rem auto 2rem;
-  padding: 0 1rem;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  /* background-color: transparent; */  /* 기본 흰 배경 제거 */
+  /* box-shadow: none; */               /* 그림자 제거 */
+  /* border-radius: 0; */               /* 둥근 모서리 제거 */
+  margin: 5rem auto 2rem;              /* 상단 헤더(≈60px) + 여유(4rem) */
+  padding: 0 2rem;                     /* 좌우 여백 */
+  max-width: 90%;                      /* 화면 폭의 90%까지 확장 */
+  /* 배경색/그림자/테두리를 제거했으므로 별도 선언 없음 */
 }
 
 h1 {
@@ -96,31 +99,36 @@ footer {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   6) Gallery 전용 스타일 (한 줄에 사진 1개, 너비 지정 가능)
+   6) Gallery 전용 스타일
+   - 한 줄에 2개 사진 배치
+   - 콘텐츠 폭 넓히고, 흰 배경 박스 제거
 ──────────────────────────────────────────────────────────── */
 .gallery-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 한 줄에 사진 2개 */
   gap: 1rem;
-  margin-top: 5rem;
-  padding: 0 1rem;
+  margin-top: 5rem;      /* 헤더 아래 여유 공간 */
+  padding: 0 2rem;       /* 좌우 여백 */
+  max-width: 90%;        /* 화면 폭의 90% 사용 */
+  margin-left: auto;
+  margin-right: auto;
+  /* 배경색, 그림자, 테두리 없음(기본) */
 }
 
 .gallery-item {
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 0.5rem;
-  width: 100%;
-  max-width: 600px; /* 여기서 최대 너비 지정 */
-  box-sizing: border-box;
+  background-color: transparent; /* 흰 배경 제거 */
+  border: none;                   /* 테두리 제거 */
+  padding: 0.5rem 0;              /* 사진 위아래 약간 여백 */
+  text-align: center;
 }
 
 .gallery-item img {
-  width: 100%; /* 이 값을 변경하면 사진 너비를 조정할 수 있습니다 */
+  width: 100%;     /* 사진이 칸 너비에 꽉 차도록 */
+  max-width: 800px;/* 필요 시 개별 이미지 최대 너비 지정(옵션) */
   height: auto;
   border-radius: 4px;
+  /* 테두리, 그림자 제거 */
+  border: none;
 }
 
 .gallery-item figcaption {
@@ -131,13 +139,15 @@ footer {
 
 /* ─────────────────────────────────────────────────────────────
    7) CV 전용 스타일 (두 열 레이아웃 + 사이드바 정상 표시)
+   - 콘텐츠 배경 제거, 폭 넓히기
 ──────────────────────────────────────────────────────────── */
 .cv-container {
   display: flex;
   flex-wrap: nowrap;
-  max-width: 960px;
-  margin: 5rem auto 2rem;
-  padding: 0 1rem;
+  margin: 5rem auto 2rem; /* 헤더 아래 여유 공간 및 중앙 정렬 */
+  padding: 0 2rem;        /* 좌우 여백 */
+  max-width: 90%;         /* 화면 폭의 90% 사용 */
+  /* 배경색/그림자/테두리 없음(기본) */
 }
 
 .sidebar {
@@ -145,8 +155,8 @@ footer {
   flex-shrink: 0;
   margin-right: 2rem;
   position: sticky;
-  top: 80px;
-  align-self: flex-start;
+  top: 80px;               /* 헤더 높이(≈60px) + 여유(20px) */
+  align-self: flex-start;  /* 상단에 붙도록 */
 }
 
 .sidebar nav ul {
@@ -154,7 +164,7 @@ footer {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  /* 세로 정렬 */
 }
 
 .sidebar nav ul li {
@@ -163,17 +173,18 @@ footer {
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #333 !important;
+  color: #333 !important;    /* 흰색 배경에서 잘 보이도록 진한 회색 */
   font-weight: bold;
   font-size: 1rem;
 }
 
 .sidebar nav ul li a:hover {
-  color: #5e34f5 !important;
+  color: #5e34f5 !important; /* 보라색 강조 */
 }
 
 .cv-content {
   flex: 1;
+  /* 배경색/그림자/테두리 없음(기본) */
 }
 
 .cv-content h1 {
@@ -203,11 +214,23 @@ footer {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   8) 반응형(옵션)
+   8) About 페이지 우측 사진 스타일
 ──────────────────────────────────────────────────────────── */
+.about-photo {
+  float: right;
+  width: 200px;        /* 원하는 크기로 조정 가능 */
+  height: auto;
+  margin: 0 0 1rem 1rem; /* 우측 정렬 후 좌측에 여백 추가 */
+  border-radius: 8px;  /* 둥근 모서리(옵션) */
+}
+
+/* ─────────────────────────────────────────────────────────────
+   9) 반응형(옵션)
+──────────────────────────────────────────────────────────── */
+/* 900px 이하 화면 */
 @media (max-width: 900px) {
   .gallery-container {
-    max-width: 100%;
+    grid-template-columns: 1fr; /* 한 줄에 사진 1개로 변경 */
   }
   .cv-container {
     flex-direction: column;
@@ -220,10 +243,73 @@ footer {
     margin-bottom: 1.5rem;
     top: auto;
   }
+  .about-photo {
+    float: none;
+    display: block;
+    margin: 1rem auto 2rem; /* 중앙 정렬로 변경 */
+    width: 50%;             /* 화면 폭의 50% 사용 */
+  }
+}
+
+/* 600px 이하 화면 */
+@media (max-width: 600px) {
+  .about-photo {
+    width: 80%; /* 화면 폭의 80% 사용 */
+  }
+}
+/* ─────────────────────────────────────────────────────────────
+   About 페이지 전용 레이아웃 (두 칸 정렬)
+──────────────────────────────────────────────────────────── */
+.about-container {
+  display: flex;
+  flex-wrap: nowrap;       /* 무조건 한 줄에 두 칸 */
+  margin-top: 5rem;        /* 헤더(약 60px) + 여유(≈20px) */
+  padding: 0 2rem;         /* 좌우 여백 */
+  max-width: 90%;          /* 화면 폭의 90% 폭으로 조정 */
+  margin-left: auto;
+  margin-right: auto;
+  /* 배경/테두리/그림자 없음 */
+}
+
+.about-text {
+  flex: 1;                 /* 왼쪽 칸이 남은 가로폭을 모두 차지 */
+  /* 필요 시 왼쪽 텍스트에 여백, 폰트 조정 등을 추가 가능 */
+}
+
+.about-image {
+  flex-shrink: 0;          /* 오른쪽 칸은 축소되지 않음 */
+  width: 250px;            /* 원하는 사진 영역 너비 (px 단위) */
+  margin-left: 2rem;       /* 왼쪽 텍스트와 간격 */
+  display: flex;
+  justify-content: center; /* 사진을 가로 중앙에 배치 */
+  align-items: flex-start; /* 사진 자체는 상단 정렬 */
+}
+
+.about-image img {
+  width: 100%;             /* 부모 너비(250px)에 맞춰 늘려서 표시 */
+  height: auto;
+  border-radius: 8px;      /* 사진 모서리를 둥글게 (옵션) */
+  /* 필요 시 테두리, 그림자 등을 제거/추가 가능 */
+}
+
+/* ─────────────────────────────────────────────────────────────
+   반응형: 화면이 좁아질 때 처리
+──────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;   /* 세로로 쌓아 올림 */
+    margin-top: 5rem;
+  }
+  .about-image {
+    width: 50%;               /* 화면 폭의 50% */
+    margin-left: 0;
+    margin-bottom: 1.5rem;    /* 텍스트와 아래쪽 간격 */
+    align-self: center;       /* 부모 컨테이너 안에서 중앙 정렬 */
+  }
 }
 
 @media (max-width: 600px) {
-  .gallery-container {
-    max-width: 100%;
+  .about-image {
+    width: 80%;               /* 화면 폭의 80% */
   }
 }
