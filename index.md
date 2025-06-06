@@ -3,38 +3,27 @@ layout: page
 title: MinSu Ko
 ---
 
-<!-- ─────────────────────────────────────────────────────────────
-     About 페이지 전체를 두 칸 레이아웃으로 감싸는 컨테이너
-──────────────────────────────────────────────────────────── -->
+<!-- 두 칸 레이아웃 컨테이너 -->
 <div class="about-container">
 
-  <!-- ─────────────────────────────────────────────────────────────
-       1) 왼쪽 칸: 텍스트 영역 (자기소개 내용)
-  ───────────────────────────────────────────────────────────── -->
-  <div class="about-text">
-    <h1>MinSu Ko</h1>
+  <!-- 1) 왼쪽 칸: markdown="1" 추가 -->
+  <div class="about-text" markdown="1">
 
-    ## 나에 대하여
+    Master-Doctoral integrated program at
+    Department of Physics, Korea Advanced Institute of Sci. and Tech. (KAIST)
+ 
+    Interested in...
+    Experimental cosmology
+    Beyond Standard Model physics
+    Radio astronomical instruments
+    Superconducting & low noise systems
 
-    여기에 자신의 프로필, 소개글, 연락처 등을 자유롭게 작성하세요.  
-    예시:
-
-    - 이름: 홍길동  
-    - 소속: ABC 대학교 물리학과  
-    - 관심 분야: 전파천문학, RF 회로 설계  
-    - 이메일: example@domain.com  
-
-    원하는 만큼 Markdown 문법으로 자유롭게 꾸며도 됩니다.
   </div>
 
-  <!-- ─────────────────────────────────────────────────────────────
-       2) 오른쪽 칸: 사진 삽입
-       · src 경로는 실제 업로드한 이미지 경로로 바꿔 주세요.
-       · class="about-image" → 아래 CSS에서 위치/크기를 잡아줌.
-  ───────────────────────────────────────────────────────────── -->
+  <!-- 2) 오른쪽 칸: 이미지 -->
   <div class="about-image">
     <img 
-      src="{{ '/assets/images/mypic.jpg' | relative_url }}" 
+      src="{{ '/assets/gallery/mypic.jpg' | relative_url }}" 
       alt="My Photo" 
     />
   </div>

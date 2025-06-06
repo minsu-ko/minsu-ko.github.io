@@ -2,16 +2,17 @@
 # 여기서 각 항목(item)은 image:와 caption:을 가집니다.
 # image: assets/gallery/디렉터리 내 이미지 경로를 지정
 # caption: 사진 아래에 출력될 짧은 설명
+# 위쪽일수록 최근
 # ──────────────────────────────────────────────────────
 
-- image: "/assets/gallery/max.png"
-  caption: "첫 번째 사진 설명입니다."
+- image: "/assets/gallery/grad.jpeg"
+  caption: "2025 Feb. Graduate ceremony of KAIST undergrad. program"
 
 - image: "/assets/gallery/bf4.jpeg"
-  caption: "두 번째 사진 설명입니다."
+  caption: "2024 Dec. Installing components on CAPP-BF4."
 
-- image: "/assets/gallery/grad.jpeg"
-  caption: "세 번째 사진 설명입니다."
+- image: "/assets/gallery/max.png"
+  caption: "2023 Aug. With CAPP-MAX."
 
 # ──────────────────────────────────────────────────────
 # 더 많은 사진을 추가하고 싶으면, 같은 형식으로 아래에 계속 나열하세요.
