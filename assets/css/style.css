@@ -10,14 +10,12 @@ body {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   2) 헤더 / 상단 내비게이션 (오직 header 내부 nav에만 적용)
+   2) 헤더 / 상단 내비게이션
 ──────────────────────────────────────────────────────────── */
-/* 모든 nav ul에 적용되던 기존 스타일(nav ul { display: flex; … })을
-   header nav ul로 한정해서, sidebar nav ul에는 적용되지 않게 변경했습니다. */
 header {
   background-color: #333;
   padding: 1rem 0;
-  position: fixed;       /* 상단에 고정 */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,7 +35,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;           /* 상단 메뉴 글자(흰색) */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -51,7 +49,7 @@ header nav ul li a:hover {
 ──────────────────────────────────────────────────────────── */
 main {
   max-width: 800px;
-  margin: 5rem auto 2rem;  /* 상단 헤더(≈60px) + 여유(4rem) */
+  margin: 5rem auto 2rem;
   padding: 0 1rem;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -98,26 +96,29 @@ footer {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   6) Gallery 전용 스타일 (3열 레이아웃 + 사진 크게, 간격 좁힘)
+   6) Gallery 전용 스타일 (한 줄에 사진 1개, 너비 지정 가능)
 ──────────────────────────────────────────────────────────── */
 .gallery-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 항상 3열 */
-  gap: 0.5rem;                           /* 간격을 0.5rem으로 좁혀서 사진 간 거리를 줄임 */
-  margin-top: 5rem;  /* 상단 헤더 공간 확보 */
-  padding: 0 1rem;   /* 좌우 여백 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+  padding: 0 1rem;
 }
 
 .gallery-item {
   background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 0.5rem;   /* 카드 내부 여백 유지 */
-  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 600px; /* 여기서 최대 너비 지정 */
+  box-sizing: border-box;
 }
 
 .gallery-item img {
-  width: 100%;       /* 칸 너비를 100%로 꽉 채워서 크게 보임 */
+  width: 100%; /* 이 값을 변경하면 사진 너비를 조정할 수 있습니다 */
   height: auto;
   border-radius: 4px;
 }
@@ -135,24 +136,25 @@ footer {
   display: flex;
   flex-wrap: nowrap;
   max-width: 960px;
-  margin: 5rem auto 2rem;  /* 상단 헤더(≈60px) + 여유(4rem) */
-  padding: 0 1rem;         /* 좌우 여백 */
+  margin: 5rem auto 2rem;
+  padding: 0 1rem;
 }
 
 .sidebar {
   width: 200px;
-  flex-shrink: 0;            /* 축소 금지 */
-  margin-right: 2rem;        /* 오른쪽 콘텐츠와 간격 */
+  flex-shrink: 0;
+  margin-right: 2rem;
   position: sticky;
-  top: 80px;                 /* 헤더 높이(≈60px) + 여유(≈20px) */
+  top: 80px;
+  align-self: flex-start;
 }
 
-/* sidebar 내부 nav ul은 block으로 처리해서, header nav ul의 flex 스타일이 적용되지 않도록 함 */
 .sidebar nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar nav ul li {
@@ -161,32 +163,31 @@ footer {
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #333 !important;    /* 흰색 배경에서 확실히 보이는 진한 회색 */
+  color: #333 !important;
   font-weight: bold;
   font-size: 1rem;
 }
 
 .sidebar nav ul li a:hover {
-  color: #5e34f5 !important; /* 보라색으로 호버 강조 */
+  color: #5e34f5 !important;
 }
 
-/* 오른쪽 메인 콘텐츠 */
 .cv-content {
-  flex: 1;                   /* 남은 영역 모두 차지 */
+  flex: 1;
 }
 
 .cv-content h1 {
   margin-top: 0;
   font-size: 2.5rem;
   color: #333;
-  border-bottom: 2px solid #5e34f5;  /* 보라색 강조선 */
+  border-bottom: 2px solid #5e34f5;
   padding-bottom: 0.5rem;
 }
 
 .cv-content h2 {
   margin-top: 2rem;
   font-size: 1.75rem;
-  color: #5e34f5;            /* 섹션 제목 보라색 */
+  color: #5e34f5;
 }
 
 .cv-content ul,
@@ -195,7 +196,6 @@ footer {
   line-height: 1.6;
 }
 
-/* 수평선(---) 스타일 */
 .cv-content hr {
   border: none;
   border-top: 1px solid #ddd;
@@ -205,16 +205,13 @@ footer {
 /* ─────────────────────────────────────────────────────────────
    8) 반응형(옵션)
 ──────────────────────────────────────────────────────────── */
-/* 화면이 900px 이하로 좁아질 때 */
 @media (max-width: 900px) {
-  /* Gallery: 2열로 변경 */
   .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
   }
-  /* CV: 사이드바를 맨 위로 보내고 세로 정렬 */
   .cv-container {
     flex-direction: column;
-    margin-top: 5rem; /* 여전히 헤더 공간 확보 */
+    margin-top: 5rem;
   }
   .sidebar {
     position: static;
@@ -225,10 +222,8 @@ footer {
   }
 }
 
-/* 화면이 600px 이하로 좁아질 때 */
 @media (max-width: 600px) {
-  /* Gallery: 1열로 변경 */
   .gallery-container {
-    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
