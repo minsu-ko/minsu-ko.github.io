@@ -200,3 +200,76 @@ footer {
   font-size: 0.9rem;
   color: #555;
 }
+/* ─────────────────────────────────────────────────────────────
+   7) CV (두 열 레이아웃) 전용 스타일
+──────────────────────────────────────────────────────────── */
+.cv-container {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 960px;
+  margin: 2rem auto;  /* 상단 여백 + 중앙 정렬 */
+}
+
+/* 왼쪽 사이드바 (고정 너비) */
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;            /* 축소 금지 */
+  margin-right: 2rem;        /* 오른쪽 콘텐츠와 간격 */
+  position: sticky;
+  top: 80px;                 /* 헤더 높이에 맞춰 스크롤 시 고정 */
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.sidebar nav ul li a:hover {
+  color: #5e34f5;            /* 보라색 계열 하이라이트 */
+}
+
+/* 오른쪽 콘텐츠(본문) */
+.cv-content {
+  flex: 1;                   /* 남은 영역 모두 차지 */
+}
+
+.cv-content h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #333;
+  border-bottom: 2px solid #5e34f5;  /* 강조색(보라) 라인 */
+  padding-bottom: 0.5rem;
+}
+
+.cv-content h2 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  color: #5e34f5;            /* section 제목은 보라색으로 */
+}
+
+.cv-content ul,
+.cv-content p,
+.cv-content ol {
+  line-height: 1.6;
+}
+
+/* 수평선(---) 스타일 */
+.cv-content hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* 표(/table)나 다른 요소가 필요하다면 아래 추가로 스타일 지정 가능 */
