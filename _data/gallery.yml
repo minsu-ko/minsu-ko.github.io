@@ -5,8 +5,14 @@
 # 위쪽일수록 최근
 # ──────────────────────────────────────────────────────
 
-- image: "/assets/gallery/grad.jpeg"
-  caption: "2025 Feb. Graduate ceremony of KAIST undergrad. program"
+- image: "/assets/gallery/urp.JPG"
+  caption: "2025 Apr. KAIST URP workshop poster."
+
+- image: "/assets/gallery/kas2025s.jpg"
+  caption: "2025 Apr. Korea Astronomical Society 2025 spring meeting. Poster."
+
+- image: "/assets/gallery/kas2025s.jpg"
+  caption: "2025 Feb. Graduate ceremony of KAIST undergrad. program."
 
 - image: "/assets/gallery/bf4.jpeg"
   caption: "2024 Dec. Installing components on CAPP-BF4."
@@ -14,11 +20,20 @@
 - image: "/assets/gallery/fermi.png"
   caption: "2024 Jul. At Fermi's house, Rome."
 
+- image: "/assets/gallery/kps2024s.JPG"
+  caption: "2024 Apr. Korea Physical Society 2024 spring meeting. Oral."
+
 - image: "/assets/gallery/twts.jpg"
   caption: "2023 Dec. At the Nobel Prize Museum, Stockholm. TWTS program."
 
+- image: "/assets/gallery/ltd20.JPG"
+  caption: "2023 Jul. Low Temperature Detectors 20. Poster."
+
 - image: "/assets/gallery/max.png"
-  caption: "2023 Aug. With CAPP-MAX."
+  caption: "2023 May. With CAPP-MAX."
+
+- image: "/assets/gallery/diode.JPG"
+  caption: "2023 Feb. With CAPP-CRYOONE. Installing diode sample."
 
 # ──────────────────────────────────────────────────────
 # 더 많은 사진을 추가하고 싶으면, 같은 형식으로 아래에 계속 나열하세요.
