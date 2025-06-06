@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title }} | {{ site.title }}</title>
+  <!-- 반드시 올바른 경로로 style.css를 불러와야 합니다 -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 </head>
 <body>
-  <!-- 상단 공통 네비게이션(About me / CV / Gallery) -->
+  <!-- 상단 공통 네비게이션 -->
   <header>
     <nav>
       <ul>
@@ -18,12 +19,8 @@
     </nav>
   </header>
 
-  <!--
-    두 열 레이아웃 시작:
-    왼쪽 사이드바(nav.sidebar) + 오른쪽 본문(section.cv-content)
-  -->
   <div class="cv-container">
-    <!-- 사이드바: 고정 너비, 스크롤 시 따라 내려오게 하고 싶다면 position: sticky 사용 -->
+    <!-- 왼쪽 사이드바 -->
     <aside class="sidebar">
       <nav>
         <ul>
@@ -38,15 +35,13 @@
       </nav>
     </aside>
 
-    <!-- 메인 콘텐츠: 오른쪽 부분 -->
+    <!-- 오른쪽 메인 콘텐츠 -->
     <section class="cv-content">
       <h1>{{ page.title }}</h1>
-      <!-- markdown으로 쓴 cv.md의 모든 콘텐츠(heading, list 등)가 이 위치에 렌더링 -->
       {{ content }}
     </section>
   </div>
 
-  <!-- 공통 푸터 -->
   <footer>
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
   </footer>

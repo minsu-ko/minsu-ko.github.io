@@ -15,7 +15,13 @@ body {
 header {
   background-color: #333;
   padding: 1rem 0;
+  position: fixed;       /* 상단에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -23,14 +29,17 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
 nav ul li {
   margin: 0 1rem;
 }
+
 nav ul li a {
-  color: #fff;
+  color: #fff;           /* 상단 메뉴 글자(흰색) */
   text-decoration: none;
   font-weight: bold;
 }
+
 nav ul li a:hover {
   text-decoration: underline;
 }
@@ -40,95 +49,7 @@ nav ul li a:hover {
 ──────────────────────────────────────────────────────────── */
 main {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 2rem;
-  color: #333;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   4) 기사(포스트) 날짜 및 목록
-──────────────────────────────────────────────────────────── */
-.news-list ul {
-  list-style: none;
-  padding: 0;
-}
-.news-list li {
-  margin: 1rem 0;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #ddd;
-}
-.news-list .post-date {
-  color: #999;
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   5) 푸터
-──────────────────────────────────────────────────────────── */
-footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   기존 스타일 (변경 없음)
-──────────────────────────────────────────────────────────── */
-/* ─────────────────────────────────────────────────────────────
-   1) 기본 전체 스타일
-──────────────────────────────────────────────────────────── */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   2) 헤더 / 내비게이션
-──────────────────────────────────────────────────────────── */
-header {
-  background-color: #333;
-  padding: 1rem 0;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  margin: 0 1rem;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   3) 메인 컨텐츠
-──────────────────────────────────────────────────────────── */
-main {
-  max-width: 800px;
-  margin: 2rem auto;
+  margin: 5rem auto 2rem;  /* 상단 헤더(≈60px) + 여유(4rem) */
   padding: 0 1rem;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -147,12 +68,15 @@ h1 {
 .news-list ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
+
 .news-list li {
   margin: 1rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ddd;
 }
+
 .news-list .post-date {
   color: #999;
   font-size: 0.9rem;
@@ -172,13 +96,14 @@ footer {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   6) Gallery 전용 스타일
+   6) Gallery 전용 스타일 (3열 레이아웃)
 ──────────────────────────────────────────────────────────── */
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 항상 3열 */
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 5rem; /* 상단 헤더 공간을 확보 */
+  padding: 0 1rem;  /* 좌우 여백 */
 }
 
 .gallery-item {
@@ -190,7 +115,7 @@ footer {
 }
 
 .gallery-item img {
-  max-width: 100%;
+  width: 100%;    /* 칸 너비를 100%로 꽉 채움 */
   height: auto;
   border-radius: 4px;
 }
@@ -200,23 +125,25 @@ footer {
   font-size: 0.9rem;
   color: #555;
 }
+
 /* ─────────────────────────────────────────────────────────────
-   7) CV (두 열 레이아웃) 전용 스타일
+   7) CV 전용 스타일 (두 열 레이아웃 + 사이드바)
 ──────────────────────────────────────────────────────────── */
 .cv-container {
   display: flex;
   flex-wrap: nowrap;
   max-width: 960px;
-  margin: 2rem auto;  /* 상단 여백 + 중앙 정렬 */
+  margin: 5rem auto 2rem;  /* 상단 헤더(≈60px) + 여유(4rem) */
+  padding: 0 1rem;         /* 좌우 여백 */
 }
 
-/* 왼쪽 사이드바 (고정 너비) */
+/* 왼쪽 사이드바 */
 .sidebar {
   width: 200px;
   flex-shrink: 0;            /* 축소 금지 */
   margin-right: 2rem;        /* 오른쪽 콘텐츠와 간격 */
   position: sticky;
-  top: 80px;                 /* 헤더 높이에 맞춰 스크롤 시 고정 */
+  top: 80px;                 /* 헤더 높이(60px) + 약간의 여백(20px) */
 }
 
 .sidebar nav ul {
@@ -231,16 +158,16 @@ footer {
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #333 !important;    /* 흰색 배경에서 안 보이는 경우 대비 */
   font-weight: bold;
   font-size: 1rem;
 }
 
 .sidebar nav ul li a:hover {
-  color: #5e34f5;            /* 보라색 계열 하이라이트 */
+  color: #5e34f5 !important; /* 보라색으로 호버 효과 */
 }
 
-/* 오른쪽 콘텐츠(본문) */
+/* 오른쪽 메인 콘텐츠 */
 .cv-content {
   flex: 1;                   /* 남은 영역 모두 차지 */
 }
@@ -249,14 +176,14 @@ footer {
   margin-top: 0;
   font-size: 2.5rem;
   color: #333;
-  border-bottom: 2px solid #5e34f5;  /* 강조색(보라) 라인 */
+  border-bottom: 2px solid #5e34f5;  /* 강조색(보라) 아래선 */
   padding-bottom: 0.5rem;
 }
 
 .cv-content h2 {
   margin-top: 2rem;
   font-size: 1.75rem;
-  color: #5e34f5;            /* section 제목은 보라색으로 */
+  color: #5e34f5;            /* 섹션 제목 보라색 */
 }
 
 .cv-content ul,
@@ -272,4 +199,33 @@ footer {
   margin: 2rem 0;
 }
 
-/* 표(/table)나 다른 요소가 필요하다면 아래 추가로 스타일 지정 가능 */
+/* ─────────────────────────────────────────────────────────────
+   8) 반응형(옵션)
+──────────────────────────────────────────────────────────── */
+/* 화면이 900px 이하로 좁아질 때 */
+@media (max-width: 900px) {
+  /* Gallery: 2열로 변경 */
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* CV: 사이드바를 맨 위로 보내고 펼치기 */
+  .cv-container {
+    flex-direction: column;
+    margin-top: 5rem; /* 여전히 헤더 공간 확보 */
+  }
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    top: auto;
+  }
+}
+
+/* 화면이 600px 이하로 좁아질 때 */
+@media (max-width: 600px) {
+  /* Gallery: 1열로 변경 */
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+}
