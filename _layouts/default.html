@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <!-- 기본 메타 -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 페이지 제목 -->
   <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- Open Graph 메타 (카카오톡/소셜 썸네일 지정) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="{{ page.url | absolute_url }}" />
+  <meta property="og:title"       content="{{ page.title }} | {{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image"       content="{{ '/assets/images/og-thumbnail.png' | absolute_url }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- 트위터 카드 -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="{{ page.title }} | {{ site.title }}" />
+  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="twitter:image"       content="{{ '/assets/images/og-thumbnail.png' | absolute_url }}" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 </head>
 <body>
   <header>
     {% include nav.html %}
   </header>
-
   <main>
     {{ content }}
   </main>
-
   <footer>
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
   </footer>
