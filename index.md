@@ -1,31 +1,23 @@
 ---
-layout: page
-title: MinSu Ko
+layout: default
+title: ""        # 빈 문자열로 두거나 title 자체를 지워도 됩니다.
 ---
 
-<!-- 두 칸 레이아웃 컨테이너 -->
+# MinSu Ko
+
 <div class="about-container">
-
-  <!-- 1) 왼쪽 칸: markdown="1" 추가 -->
   <div class="about-text" markdown="1">
+    Master–Doctoral integrated program (1st year) at  
+    Department of Physics, KAIST  
 
-  Master-Doctoral integrated program (1st year) at   
-  Department of Physics, Korea Advanced Institute of Sci. and Tech. (KAIST)
- 
-  As an experimental physicist, I am interested in
-  - Experimental cosmology
-  - Beyond Standard Model physics
-  - Radio astronomical instruments
-  - Superconducting & low noise systems
-
+    As an experimental physicist, I am interested in
+    - Experimental cosmology
+    - Beyond Standard Model physics
+    - Radio astronomical instruments
+    - Superconducting & low noise systems
   </div>
 
-  <!-- 2) 오른쪽 칸: 이미지 -->
   <div class="about-image">
-    <img 
-      src="{{ '/assets/gallery/mypic.jpg' | relative_url }}" 
-      alt="My Photo" 
-    />
+    <img src="{{ '/assets/gallery/mypic.jpg' | relative_url }}" alt="My Photo" />
   </div>
-
 </div>
