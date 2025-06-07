@@ -55,15 +55,53 @@ title: CV
 
 <div class="honor-item">
   <div class="honor-header">
-    <span class="honor-title">Best student award</span>
-    <span class="honor-date">2025. Apr</span>
+    <span class="honor-title">Presidential Science Scholarship</span>
+    <span class="honor-date">Jun, 2025</span>
   </div>
-  <div class="honor-institution">ABC University</div>
+  <div class="honor-institution">Korea Student Aid Foundation</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Encouragement Award of Undergrad. Research Program Workshop</span>
+    <span class="honor-date">Mar, 2025</span>
+  </div>
+  <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Outstanding Presentation Award</span>
+    <span class="honor-date">Apr, 2024</span>
+  </div>
+  <div class="honor-institution">Korean Physical Society</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">The Way To Stockholm (TWTS)</span>
+    <span class="honor-date">Dec, 2025</span>
+  </div>
+  <div class="honor-institution">Korea Foundation for Advanced Studies</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Department of Physics Dean's list</span>
+    <span class="honor-date">Aug, 2023</span>
+  </div>
+  <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
 </div>
 
 ---
 
 ## Teachings {#teachings}
 
-- **Radio Astronomy**: Teaching assistant, KAIST, Spring 2025  
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Radio Astronomy, Teaching Assistant</span>
+    <span class="honor-date">Spring semester, 2025</span>
+  </div>
+  <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
+</div> 
 
