@@ -377,3 +377,30 @@ nav ul li.social-icon a:hover img {
   font-style: italic;
   color: #333;
 }
+/* About 페이지: 텍스트와 이미지 2단 레이아웃 */
+.about-container {
+  display: flex;
+  align-items: flex-start;   /* 텍스트와 이미지 상단 정렬 */
+  gap: 2rem;                  /* 칸 사이 여백 */
+  margin: 2rem 0;
+}
+
+.about-text {
+  flex: 1;                    /* 텍스트 영역이 남는 공간을 차지 */
+  line-height: 1.6;           /* 가독성 위한 행간 */
+}
+
+.about-text h1,
+.about-text h2 {
+  margin-top: 0;              /* 헤딩 위 여백 제거 */
+}
+
+.about-image {
+  flex: 0 0 300px;            /* 너비 고정 (사진 가로 크기) */
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

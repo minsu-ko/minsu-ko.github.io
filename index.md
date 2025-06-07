@@ -4,8 +4,8 @@ title: ""
 ---
 
 <div class="about-container">
-
-  <div class="about-text" markdown="1">
+  <!-- 왼쪽 텍스트 -->
+  <div class="about-text">
 # MinSu Ko
 
 Master–Doctoral integrated program (1st year) at  
@@ -18,8 +18,11 @@ As an experimental physicist, I am interested in
 - Superconducting & low noise systems
   </div>
 
+  <!-- 오른쪽 이미지 -->
   <div class="about-image">
-    <img src="{{ '/assets/gallery/mypic.jpg' | relative_url }}" alt="My Photo" />
+    <img 
+      src="{{ '/assets/gallery/mypic.jpg' | relative_url }}" 
+      alt="My Photo" 
+    />
   </div>
-
 </div>
