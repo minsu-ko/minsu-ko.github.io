@@ -10,23 +10,19 @@ title: CV
 
 ## Basics {#basics}
 
-- **Name**: 홍길동 (Hong Gil-dong)  
-- **Position**: PhD Candidate  
-- **Affiliation**: Department of Physics, ABC University  
-- **Email**: example@domain.com  
-- **Website**: https://your-website.example.com  
-- **Summary**: 전파천문학 및 RF 회로 설계 연구 중
+- **Name**: MinSu Ko (고민수)  
+- **Position**: Student, Master-doctoral integrated program
+- **Affiliation**: Department of Physics, Korea Advanced Institute of Sci. and Tech. (KAIST)
+- **Email**: komin0310@kaist.ac.kr
+- **Current Project**: Development of 12-20 GHz radio astronomical receiver to detect CO line emission from the early universe.
 
 ---
 
 ## Education {#education}
 
-**ABC University**  
-- B.S. in Physics, 2017.03 – 2021.02  
-- M.S. in Physics, 2021.03 – 2023.02  
-
-**DEF University**  
-- Ph.D. in Astrophysics (재학 중), 2023.03 – 현재  
+**Korea Advanced Institute of Sci. and Tech.**  
+- B.S. in Physics, 2020.03 – 2025.02  
+- M.S. in Physics, 2025.03 – Present  
 
 ---
 
@@ -57,15 +53,33 @@ title: CV
 
 ## Honors {#honors}
 
-- ABC University 장학금 (2021–2023)  
-- 국내 RF 회로 설계 경진대회 최우수상 (2022)  
-- XYZ 연구소 우수 포스터 상 (2023)  
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Best student award</span>
+    <span class="honor-date">2025. Apr</span>
+  </div>
+  <div class="honor-institution">ABC University</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">RF Circuit Design Competition 최우수상</span>
+    <span class="honor-date">2022. Nov</span>
+  </div>
+  <div class="honor-institution">Korea RF Association</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">XYZ Research Poster Award</span>
+    <span class="honor-date">2023. Jun</span>
+  </div>
+  <div class="honor-institution">XYZ Research Institute</div>
+</div>
 
 ---
 
 ## Teachings {#teachings}
 
-- **ASTR101**: Radio Astronomy (조교), ABC University, Spring 2024  
-- **ELEC202**: RF Circuit Design (강의 조교), ABC University, Fall 2023  
-- **PHY301**: Microwave Engineering (세미나), DEF University, Spring 2023  
+- **Radio Astronomy**: Teaching assistant, KAIST, Spring 2025  
 
