@@ -350,31 +350,30 @@ nav ul li.social-icon a img {
 nav ul li.social-icon a:hover img {
   opacity: 0.8;
 }
-/* Honors 섹션 항목 스타일 */
+
+/* Honors 섹션 */
 .honor-item {
-  margin-bottom: 1.5rem;      /* 항목 간 여백 */
+  margin-bottom: 1.5rem;
 }
 
 .honor-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-size: 1rem;            /* 기본 텍스트 크기 */
-  font-weight: bold;          /* 제목(award name)을 볼드로 */
 }
 
 .honor-title {
-  /* 추가 스타일이 필요하면 여기에 */
+  font-weight: bold;
 }
 
 .honor-date {
-  font-weight: normal;        /* 날짜는 일반 굵기 */
-  color: #666;                /* 회색 계열 보조 텍스트 */
-  font-size: 0.9rem;          /* 약간 작게 */
+  font-weight: normal;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .honor-institution {
-  margin-left: 0.5rem;        /* 살짝 들여쓰기 */
-  font-style: italic;         /* 기울임꼴로 강조(선택 사항) */
-  color: #333;                /* 진한 회색 */
+  margin-left: 0.5rem;
+  font-style: italic;
+  color: #333;
 }

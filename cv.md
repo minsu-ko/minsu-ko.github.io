@@ -61,22 +61,6 @@ title: CV
   <div class="honor-institution">ABC University</div>
 </div>
 
-<div class="honor-item">
-  <div class="honor-header">
-    <span class="honor-title">RF Circuit Design Competition 최우수상</span>
-    <span class="honor-date">2022. Nov</span>
-  </div>
-  <div class="honor-institution">Korea RF Association</div>
-</div>
-
-<div class="honor-item">
-  <div class="honor-header">
-    <span class="honor-title">XYZ Research Poster Award</span>
-    <span class="honor-date">2023. Jun</span>
-  </div>
-  <div class="honor-institution">XYZ Research Institute</div>
-</div>
-
 ---
 
 ## Teachings {#teachings}
