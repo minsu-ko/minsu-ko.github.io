@@ -28,10 +28,10 @@ title: CV
 
 ## Interests {#interests}
 
-- 전파천문학 (Radio Astronomy)  
-- RF 회로 설계 (RF Electronics Design)  
-- HFSS/CST 시뮬레이션 최적화  
-- 축전기 기반 감도 향상 기술 (Y-factor measurement)
+- Experimental cosmology
+- Beyond Standard Model physics 
+- Radio astronomical instruments
+- Superconducting & low noise systems
 
 ---
 
