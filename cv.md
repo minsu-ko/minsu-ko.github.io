@@ -18,7 +18,7 @@ title: CV
 
 ---
 
-## Education {#education}
+## Education & Experience {#education}
 
 **Korea Advanced Institute of Sci. and Tech.**  
 - B.S. in Physics, 2020.03 – 2025.02  
