@@ -351,32 +351,48 @@ nav ul li.social-icon a:hover img {
   opacity: 0.8;
 }
 
-/* Honors 섹션 */
-.honor-item {
+/* Honors 2-컬럼 그리드 레이아웃 */
+.honor-item.grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 2rem;
+  align-items: baseline;
   margin-bottom: 1.5rem;
 }
 
-.honor-header {
+/* 왼쪽 정보 칸 */
+.honor-info {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
+/* 오른쪽 메타 칸 */
+.honor-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+/* 제목 */
 .honor-title {
   font-weight: bold;
 }
 
+/* 기관명 */
+.honor-institution {
+  font-style: italic;
+  color: #333;
+}
+
+/* 날짜 */
 .honor-date {
   font-weight: normal;
   color: #666;
   font-size: 0.9rem;
 }
 
-.honor-institution {
-  margin-left: 0.5rem;
-  font-style: italic;
-  color: #333;
-}
 /* About 페이지: 텍스트와 이미지 2단 레이아웃 */
 .about-container {
   display: flex;
@@ -448,35 +464,37 @@ nav ul li.social-icon a:hover img {
   /* Italic 또는 다른 스타일이 필요하면 아래 주석을 해제하세요 */
   /* font-style: italic; */
 }
-/* ─────────────────────────────────────────────────────────────
-   Employment 섹션: 2행 그리드 레이아웃
-──────────────────────────────────────────────────────────── */
-.employment-item {
+/* 2-컬럼 그리드 레이아웃 */
+.employment-item.grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 2rem;
+  row-gap: 0.25rem;
+  align-items: start;
   margin-bottom: 1.5rem;
 }
 
-.employment-header {
+/* 왼쪽 컬럼: info */
+.employment-info {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;    /* 행 간격 */
-  font-size: 1rem;
+  gap: 0.25rem;
 }
 
-.employment-row {
+/* 오른쪽 컬럼: meta */
+.employment-meta {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: right;
+  white-space: nowrap;
 }
 
+/* 스타일 재정의 */
 .job-title {
   font-weight: bold;
+  font-size: 1rem;
   color: #222;
-}
-
-.job-date {
-  font-weight: normal;
-  color: #999;
-  font-size: 0.95rem;
 }
 
 .job-institution {
@@ -484,16 +502,21 @@ nav ul li.social-icon a:hover img {
   color: #333;
 }
 
-.job-location {
-  font-weight: normal;
-  color: #999;
-  font-size: 0.9rem;
-}
-
 .job-details {
-  margin-top: 0.25rem;
   font-size: 0.9rem;
   color: #444;
+}
+
+.job-date {
+  font-weight: normal;
+  font-size: 0.95rem;
+  color: #999;
+}
+
+.job-location {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #999;
 }
 /* ─────────────────────────────────────────────────────────────
    Basics 섹션: 2열 그리드 레이아웃
@@ -582,38 +605,43 @@ nav ul li.social-icon a:hover img {
   padding: 0;
 }
 
-.publication-item {
+/* ─────────────────────────────────────────────────────────────
+   Publications 2-컬럼 레이아웃
+──────────────────────────────────────────────────────────── */
+.publication-item.grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 2rem;
+  align-items: start;
   margin-bottom: 1.5rem;
 }
 
-/* 제목과 날짜 한 줄에 배치, 제목이 길면 줄바꿈 */
-.publication-header {
+.publication-info {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
-/* 제목은 너비 제한하여 자동 줄바꿈되도록 */
-.publication-title {
+.publication-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* 제목 */
+.publication-title a {
   font-weight: bold;
   font-size: 1.05rem;
   line-height: 1.4;
-  flex: 1;
-  word-break: break-word;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
 }
-
-.doi-icon {
-  height: 14px;
-  vertical-align: text-bottom;
-  margin-left: 0.3rem;
-}
-
-/* 출판 날짜는 우측에 고정 */
-.publication-date {
-  font-size: 0.9rem;
-  color: #999;
-  white-space: nowrap;
+.publication-title a:hover {
+  opacity: 0.7;
+  transform: translateX(2px);
 }
 
 /* 저자와 저널 */
@@ -621,70 +649,118 @@ nav ul li.social-icon a:hover img {
 .publication-journal {
   font-size: 0.95rem;
   color: #444;
-  margin-top: 0.25rem;
 }
 
-.presentation-item {
-  margin-bottom: 1.5rem;
+/* 날짜 */
+.publication-date {
+  font-size: 0.9rem;
+  color: #999;
 }
 
-.presentation-header {
+/* (선택) 장소 */
+.publication-location {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Presentations 2-컬럼 레이아웃 (아이콘 없이 링크 적용)
+──────────────────────────────────────────────────────────── */
+.presentation-item.grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 2rem;
+  align-items: start;
+  margin-bottom: 1.8rem;
+}
+
+.presentation-info {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.3rem;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .presentation-title {
   font-weight: bold;
   font-size: 1.05rem;
-  line-height: 1.4;
-  flex: 1;
-  word-break: break-word;
+  line-height: 1.3;
+  word-break: break-word;       /* 긴 제목 줄바꿈 */
 }
 
-.presentation-date {
-  color: #999;
-  font-size: 0.95rem;
-  white-space: nowrap;
-  margin-left: 1rem;
+.presentation-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+
+.presentation-title a:hover {
+  opacity: 0.7;
 }
 
 .presentation-meta {
   display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 0.25rem;
-  flex-wrap: wrap;
-}
-
-.presentation-authors {
-  flex: 1;
-}
-
-.presentation-location {
-  white-space: nowrap;
+  flex-direction: column;
+  gap: 0.15rem;
   text-align: right;
+  white-space: nowrap;
+}
+
+.presentation-date {
+  font-size: 0.9rem;
   color: #999;
 }
 
+.presentation-location {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.presentation-author,
 .presentation-conference {
   font-size: 0.95rem;
   color: #444;
+  margin-top: 0.25rem;
 }
 
-.rg-icon {
-  height: 14px;
-  vertical-align: text-bottom;
-  margin-left: 0.3rem;
+/* 발표 태그 (Oral / Poster) */
+.presentation-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
 }
 
+.presentation-tag.oral {
+  background-color: rgba(0, 122, 204, 0.1);
+  color: #007acc;
+}
 
+.presentation-tag.poster {
+  background-color: rgba(204, 85, 0, 0.1);
+  color: #cc5500;
+}
 
+/* 기존 .presentation-meta 유지 */
+.presentation-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+  white-space: nowrap;
+}
 
+.presentation-date {
+  font-size: 0.9rem;
+  color: #999;
+}
 
-
+.presentation-location {
+  font-size: 0.85rem;
+  color: #999;
+}
 
 
 

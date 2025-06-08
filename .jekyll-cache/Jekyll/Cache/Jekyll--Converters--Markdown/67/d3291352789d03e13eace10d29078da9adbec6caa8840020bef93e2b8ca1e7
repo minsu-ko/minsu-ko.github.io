@@ -1,14 +1,9 @@
----
-layout: cv
-title: CV
----
-
-<!-- 
+I"e$<!-- 
   아래 헤딩(##)에는 반드시 {#anchor} 형태의 id를 써줘야
   사이드바 네비게이션 링크가 각 섹션으로 이동합니다.
 -->
 
-## Basics {#basics}
+<h2 id="basics">Basics</h2>
 
 <div class="basics-grid">
   <div class="basic-row">
@@ -33,9 +28,9 @@ title: CV
   </div>
 </div>
 
----
+<hr />
 
-## Interests {#interests}
+<h2 id="interests">Interests</h2>
 
 <div class="interests-list">
 
@@ -44,11 +39,11 @@ title: CV
     <span class="interest-title">Observational Cosmology</span>
     <span class="interest-type research">Research</span>
   </div>
-  <div class="interest-details" markdown="1">
-  Development radio astronomical instruments.   
-  Constraining molecular/nuclear power spectrum of the early universe.  
-  Line intensity mapping of CO emission lines at z > 2.5.
-  </div>
+  <div class="interest-details">
+      <p>Development radio astronomical instruments. <br />
+  Constraining molecular/nuclear power spectrum of the early universe.<br />
+  Line intensity mapping of CO emission lines at z &gt; 2.5.</p>
+    </div>
 </div>
 
 <div class="interest-item">
@@ -56,9 +51,9 @@ title: CV
     <span class="interest-title">Dark Matter Detectors</span>
     <span class="interest-type research">Research</span>
   </div>
-  <div class="interest-details" markdown="1">
-  Quantum noise limited axion haloscope based on superconducting parametric amplifiers.
-  </div>
+  <div class="interest-details">
+      <p>Quantum noise limited axion haloscope based on superconducting parametric amplifiers.</p>
+    </div>
 </div>
 
 <div class="interest-item">
@@ -66,18 +61,18 @@ title: CV
     <span class="interest-title">Nuclear/Particle Physics Experiments</span>
     <span class="interest-type interest">Interest</span>
   </div>
-  <div class="interest-details" markdown="1">
-  RF signal extraction/readouts & beam line.     
-  Particle calorimeters.      
-  Next generation neutrino detectors (DUNE, HyperK).    
-  </div>
+  <div class="interest-details">
+      <p>RF signal extraction/readouts &amp; beam line.   <br />
+  Particle calorimeters.    <br />
+  Next generation neutrino detectors (DUNE, HyperK).</p>
+    </div>
 </div>
 
 </div>
 
----
+<hr />
 
-## Education {#education}
+<h2 id="education">Education</h2>
 
 <div class="education-item">
   <div class="education-header">
@@ -100,9 +95,9 @@ title: CV
   <div class="thesis-title">Thesis: “Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP” (Advisor: Yannis K. Semertzidis)</div>
 </div>
 
----
+<hr />
 
-## Employment & Experience {#employment}
+<h2 id="employment">Employment &amp; Experience</h2>
 
 <div class="employment-item grid">
   <!-- 왼쪽 정보 칸 -->
@@ -139,39 +134,15 @@ title: CV
   </div>
 </div>
 
----
+<hr />
 
-## Publications {#publications}
+<h2 id="publications">Publications</h2>
 
 <div class="publication-item grid">
   <!-- 왼쪽 칸: 제목, 저자, 저널 -->
   <div class="publication-info">
     <div class="publication-title">
       <a href="https://doi.org/10.3389/fphy.2024.1437680" target="_blank" rel="noopener">
-        Josephson parametric amplifier based quantum noise limited amplifier development for axion search experiments in CAPP
-      </a>
-    </div>
-    <div class="publication-authors">
-      Sergey V. Uchaikin, et al.
-    </div>
-    <div class="publication-journal">
-      Frontiers in Physics
-    </div>
-  </div>
-
-  <!-- 오른쪽 칸: 날짜, (선택) 위치 -->
-  <div class="publication-meta">
-    <div class="publication-date">Jul, 2024</div>
-    <!-- 만약 장소를 표시하고 싶다면 아래 줄을 추가 -->
-    <!-- <div class="publication-location">📍 Daejeon, South Korea</div> -->
-  </div>
-</div>
-
-<div class="publication-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 저널 -->
-  <div class="publication-info">
-    <div class="publication-title">
-      <a href="https://www.researchsquare.com/article/rs-3550142/v1" target="_blank" rel="noopener">
         Wideband Amplification for IBS-CAPP's Axion Search Experiments
       </a>
     </div>
@@ -185,7 +156,7 @@ title: CV
 
   <!-- 오른쪽 칸: 날짜, (선택) 위치 -->
   <div class="publication-meta">
-    <div class="publication-date">Jul, 2024</div>
+    <div class="publication-date">Nov, 2023</div>
     <!-- 만약 장소를 표시하고 싶다면 아래 줄을 추가 -->
     <!-- <div class="publication-location">📍 Daejeon, South Korea</div> -->
   </div>
@@ -215,139 +186,34 @@ title: CV
   </div>
 </div>
 
----
+<hr />
 
-## Presentations {#presentations}
-
-<div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <a href="" target="_blank" rel="noopener">
-        COMAP-EoR ...
-      </a>
-    </div>
-    <div class="presentation-author">Wooseok Kang, MinSu Ko, et al.</div>
-    <div class="presentation-conference">
-      2025 Korean Astronomical Society Spring Meeting
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag poster">Poster</span>
-    <div class="presentation-date">Apr, 2025</div>
-    <div class="presentation-location">📍 Gyeongju, South Korea</div>
-  </div>
-</div>
+<h2 id="presentations">Presentations</h2>
 
 <div class="presentation-item grid">
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="https://www.researchgate.net/publication/392017881_Lumped-element_Josephson_Parametric_Amplifier_For_Wideband_Axion_Haloscope_Readout_of_DMAG?_sg%5B0%5D=4r27y4lKkBfO1-BzC9oFmVeT0VvSZFmLxL_Qq6l1t6hJUEQ7PytDMaWOTHgpwiMDTB6ccGlaF2Sf66v2VA4b1NLIFLN37TEVWCFa3jpv.Lu0Q2wmuZW9fiXck2Yv2idtV7JllDP9WXHOJzfalXwqXH6WGzcz69AmbRhH0KQGq_oV0V-OBFZ36VnqRS8d_1A&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQifX0" target="_blank" rel="noopener">
-        Lumped-element Josephson Parametric Amplifier For Wideband Axion Haloscope Readout of DMAG
+      <a href="https://www.researchgate.net/publication/xyz" target="_blank" rel="noopener">
+        Searching Axions with a Broadband Josephson Parametric Amplifier ching Axions with a Broadband Josephson Parametric Amplifier
       </a>
     </div>
     <div class="presentation-author">MinSu Ko, et al.</div>
     <div class="presentation-conference">
-      2025 Korean Astronomical Society Spring Meeting
+      19th International Conference on Low Temperature Physics (LT-19)
     </div>
   </div>
+
   <!-- 오른쪽 칸: 날짜, 도시 -->
   <div class="presentation-meta">
-    <span class="presentation-tag poster">Poster</span>
-    <div class="presentation-date">Apr, 2025</div>
-    <div class="presentation-location">📍 Gyeongju, South Korea</div>
+    <div class="presentation-date">May, 2024</div>
+    <div class="presentation-location">📍 Busan, South Korea</div>
   </div>
 </div>
 
-<div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <a href="" target="_blank" rel="noopener">
-        Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP
-      </a>
-    </div>
-    <div class="presentation-author">MinSu Ko, et al.</div>
-    <div class="presentation-conference">
-      KAIST Undergrad. Research Program Workshop
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag oral">Oral</span>
-    <div class="presentation-date">Feb, 2025</div>
-    <div class="presentation-location">📍 Daejeon, South Korea</div>
-  </div>
-</div>
+<hr />
 
-<div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <a href="https://www.researchgate.net/publication/380104141_Characterization_of_Parallel-Connected_Josephson_Parametric_Amplifiers_for_Axion_Search_Experiments" target="_blank" rel="noopener">
-        Characterization of Parallel-Connected Josephson Parametric Amplifiers for Axion Search Experiments
-      </a>
-    </div>
-    <div class="presentation-author">MinSu Ko, et al.</div>
-    <div class="presentation-conference">
-      The Korean Physical Society 2024 Spring Meeting
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag oral">Oral</span>
-    <div class="presentation-date">Apr, 2024</div>
-    <div class="presentation-location">📍 Daejeon, South Korea</div>
-  </div>
-</div>
-
-<div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">
-        Methods for Extending the Scanning Frequency Range of Flux-Driven Josephson Parametric Amplifiers Designed for Axion Search Experiments
-      </a>
-    </div>
-    <div class="presentation-author">Jinmeyong Kim, MinSu Ko, et al.</div>
-    <div class="presentation-conference">
-      The 20th International Conference on Low Temperature Detectors (LTD 20)
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag poster">Poster</span>
-    <div class="presentation-date">Jul, 2023</div>
-    <div class="presentation-location">📍 Daejeon, South Korea</div>
-  </div>
-</div>
-
-<div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">
-        Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit
-      </a>
-    </div>
-    <div class="presentation-author">MinSu Ko, et al.</div>
-    <div class="presentation-conference">
-      2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag oral">Oral</span>
-    <div class="presentation-date">Jun, 2023</div>
-    <div class="presentation-location">📍 Altai, Russia</div>
-  </div>
-</div>
-
----
-
-## Honors {#honors}
+<h2 id="honors">Honors</h2>
 
 <div class="honor-item grid">
   <!-- 왼쪽 칸: 제목 + 기관 -->
@@ -401,9 +267,9 @@ title: CV
   </div>
 </div>
 
----
+<hr />
 
-## Teachings {#teachings}
+<h2 id="teachings">Teachings</h2>
 
 <div class="honor-item grid">
   <div class="honor-info">
@@ -415,4 +281,4 @@ title: CV
   </div>
 </div>
 
-
+:ET
