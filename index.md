@@ -9,14 +9,16 @@ title: ""
 
 # MinSu Ko
 
-Master–Doctoral integrated program (1st year) at  
-Department of Physics, KAIST
+Master–Doctoral integrated program (1st year) in physics, at  
+Korea Advanced Institute of Science and Technology (KAIST).
 
 As an experimental physicist, I am interested in
 - Experimental cosmology
 - Beyond Standard Model physics
 - Radio astronomical instruments
-- Superconducting & low noise systems
+- Superconducting & low noise systems     
+
+The main research topic is instrumentation in observational cosmology and particle physics.
 
 I am currently working on two projects.
 

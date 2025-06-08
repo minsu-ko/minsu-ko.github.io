@@ -582,5 +582,109 @@ nav ul li.social-icon a:hover img {
   padding: 0;
 }
 
+.publication-item {
+  margin-bottom: 1.5rem;
+}
+
+/* 제목과 날짜 한 줄에 배치, 제목이 길면 줄바꿈 */
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* 제목은 너비 제한하여 자동 줄바꿈되도록 */
+.publication-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  flex: 1;
+  word-break: break-word;
+}
+
+.doi-icon {
+  height: 14px;
+  vertical-align: text-bottom;
+  margin-left: 0.3rem;
+}
+
+/* 출판 날짜는 우측에 고정 */
+.publication-date {
+  font-size: 0.9rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+/* 저자와 저널 */
+.publication-authors,
+.publication-journal {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 0.25rem;
+}
+
+.presentation-item {
+  margin-bottom: 1.5rem;
+}
+
+.presentation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.3rem;
+}
+
+.presentation-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  flex: 1;
+  word-break: break-word;
+}
+
+.presentation-date {
+  color: #999;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.presentation-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.presentation-authors {
+  flex: 1;
+}
+
+.presentation-location {
+  white-space: nowrap;
+  text-align: right;
+  color: #999;
+}
+
+.presentation-conference {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.rg-icon {
+  height: 14px;
+  vertical-align: text-bottom;
+  margin-left: 0.3rem;
+}
+
+
+
+
+
+
+
 
 

@@ -1,14 +1,9 @@
----
-layout: cv
-title: CV
----
-
-<!-- 
+I"o"<!-- 
   아래 헤딩(##)에는 반드시 {#anchor} 형태의 id를 써줘야
   사이드바 네비게이션 링크가 각 섹션으로 이동합니다.
 -->
 
-## Basics {#basics}
+<h2 id="basics">Basics</h2>
 
 <div class="basics-grid">
   <div class="basic-row">
@@ -33,9 +28,9 @@ title: CV
   </div>
 </div>
 
----
+<hr />
 
-## Interests {#interests}
+<h2 id="interests">Interests</h2>
 
 <div class="interests-list">
 
@@ -44,11 +39,11 @@ title: CV
     <span class="interest-title">Observational Cosmology</span>
     <span class="interest-type research">Research</span>
   </div>
-  <div class="interest-details" markdown="1">
-  Development radio astronomical instruments.   
-  Constraining molecular/nuclear power spectrum of the early universe.  
-  Line intensity mapping of CO emission lines at z > 2.5.
-  </div>
+  <div class="interest-details">
+      <p>Development radio astronomical instruments. <br />
+  Constraining molecular/nuclear power spectrum of the early universe.<br />
+  Line intensity mapping of CO emission lines at z &gt; 2.5.</p>
+    </div>
 </div>
 
 <div class="interest-item">
@@ -56,9 +51,9 @@ title: CV
     <span class="interest-title">Dark Matter Detectors</span>
     <span class="interest-type research">Research</span>
   </div>
-  <div class="interest-details" markdown="1">
-  Quantum noise limited axion haloscope based on superconducting parametric amplifiers.
-  </div>
+  <div class="interest-details">
+      <p>Quantum noise limited axion haloscope based on superconducting parametric amplifiers.</p>
+    </div>
 </div>
 
 <div class="interest-item">
@@ -66,18 +61,18 @@ title: CV
     <span class="interest-title">Nuclear/Particle Physics Experiments</span>
     <span class="interest-type interest">Interest</span>
   </div>
-  <div class="interest-details" markdown="1">
-  RF signal extraction/readouts & beam line.     
-  Particle calorimeters.      
-  Next generation neutrino detectors (DUNE, HyperK).    
-  </div>
+  <div class="interest-details">
+      <p>RF signal extraction/readouts &amp; beam line.   <br />
+  Particle calorimeters.    <br />
+  Next generation neutrino detectors (DUNE, HyperK).</p>
+    </div>
 </div>
 
 </div>
 
----
+<hr />
 
-## Education {#education}
+<h2 id="education">Education</h2>
 
 <div class="education-item">
   <div class="education-header">
@@ -100,9 +95,9 @@ title: CV
   <div class="thesis-title">Thesis: “Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP” (Advisor: Yannis K. Semertzidis)</div>
 </div>
 
----
+<hr />
 
-## Employment & Experience {#employment}
+<h2 id="employment">Employment &amp; Experience</h2>
 
 <div class="employment-item">
   <div class="employment-header">
@@ -138,19 +133,19 @@ title: CV
   <div class="job-details">• Experimental verification of quantum noise limited RF readouts for axion haloscope experiments.</div>
 </div>
 
----
+<hr />
 
-## Publications {#publications}
+<h2 id="publications">Publications</h2>
 
 <div class="publication-item">
   <div class="publication-header">
     <div class="publication-title">
-      Josephson parametric amplifier based quantum noise limited amplifier development for axion search experiments in CAPP
-      <a href="https://doi.org/10.3389/fphy.2024.1437680" target="_blank" rel="noopener">
+      Wideband Amplification for IBS-CAPP's Axion Search Experiments
+      <a href="https://www.researchsquare.com/article/rs-3550142/v1" target="_blank" rel="noopener">
         <img src="assets/images/doi.png" alt="DOI" class="doi-icon" />
       </a>
     </div>
-    <div class="publication-date">Jul, 2024</div>
+    <div class="publication-date">Nov, 2023</div>
   </div>
   <div class="publication-authors">
     Sergey V. Uchaikin, et al.
@@ -158,7 +153,7 @@ title: CV
   <div class="publication-journal">
     Frontiers in Physics
   </div>
-</div>    
+</div>
 
 <div class="publication-item">
   <div class="publication-header">
@@ -176,34 +171,39 @@ title: CV
   <div class="publication-journal">
     Preprint
   </div>
-</div>    
+</div>
 
----
-
-## Presentations {#presentations}
-
-<div class="presentation-item">
-  <div class="presentation-header">
-    <span class="presentation-title">
+<div class="publication-item">
+  <div class="publication-header">
+    <div class="publication-title">
       Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit
-      <a href="https://www.researchgate.net/publication/373505281_Expanding_Scanning_Frequency_Range_of_Josephson_Parametric_Amplifier_Axion_Haloscope_Readout_with_Schottky_Diode_Bias_Circuit?_sg%5B0%5D=97K-m5o_Wyq2oN8QTFQ5u-z0RxP2LHK8vSXvCHfeAhT9LtfisBIk57Ir1Ns7by7VTJYsrXLNQFDg_GKGqwBbFVOGTqQbzTR1S9rVjFvj.m9rNta1ZP7xo9qwljLvjVLEtmeH-XnTf_x2N-w7bpfFfjfmPF5RfMOgphVz1D5K21wVoCbXjnGyWJi5-GVswVQ&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHJvZmlsZSIsInByZXZpb3VzUGFnZSI6InByb2ZpbGUiLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19" class="rg-link" target="_blank" rel="noopener">
-        <img src="assets/images/researchgate.png" alt="ResearchGate" class="rg-icon" />
+      <a href="https://doi.org/10.1109/EDM58354.2023.10225136" target="_blank" rel="noopener">
+        <img src="assets/images/doi.png" alt="DOI" class="doi-icon" />
       </a>
-    </span>
-    <span class="presentation-date">Jun, 2023</span>
+    </div>
+    <div class="publication-date">Aug, 2023</div>
   </div>
-  <div class="presentation-meta">
-    <span class="presentation-authors">MinSu Ko, et al.</span>
-    <span class="presentation-location">📍 Altai, Russia</span>
+  <div class="publication-authors">
+    MinSu Ko, et al.
   </div>
-  <div class="presentation-conference">
+  <div class="publication-journal">
     2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)
   </div>
 </div>
 
----
+<hr />
 
-## Honors {#honors}
+<h2 id="presentations">Presentations</h2>
+
+<ul>
+  <li>“RF Electronics Design for Dark Matter Detection,” KASI Workshop, 2025.04.</li>
+  <li>“Optimization of Feed Horn Gain Using HFSS Interpolation,” IA Symposium, 2024.10.</li>
+  <li>“Y-factor Method for System Noise Temperature Measurement,” ACC Meeting, 2024.06.</li>
+</ul>
+
+<hr />
+
+<h2 id="honors">Honors</h2>
 
 <div class="honor-item">
   <div class="honor-header">
@@ -245,9 +245,9 @@ title: CV
   <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
 </div>
 
----
+<hr />
 
-## Teachings {#teachings}
+<h2 id="teachings">Teachings</h2>
 
 <div class="honor-item">
   <div class="honor-header">
@@ -255,5 +255,6 @@ title: CV
     <span class="honor-date">Spring semester, 2025</span>
   </div>
   <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
-</div> 
+</div>
 
+:ET
