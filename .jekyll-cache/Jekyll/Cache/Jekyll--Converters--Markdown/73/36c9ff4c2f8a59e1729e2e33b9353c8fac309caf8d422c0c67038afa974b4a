@@ -1,0 +1,164 @@
+I"�<!-- 
+  아래 헤딩(##)에는 반드시 {#anchor} 형태의 id를 써줘야
+  사이드바 네비게이션 링크가 각 섹션으로 이동합니다.
+-->
+
+<h2 id="basics">Basics</h2>
+
+<ul>
+  <li><strong>Name</strong>: MinSu Ko (고민수)</li>
+  <li><strong>Position</strong>: Student, Master-doctoral integrated program</li>
+  <li><strong>Affiliation</strong>: Department of Physics, Korea Advanced Institute of Sci. and Tech. (KAIST)</li>
+  <li><strong>Email</strong>: komin0310@kaist.ac.kr</li>
+  <li><strong>Current Project</strong>: Development of 12-20 GHz radio astronomical receiver to detect CO line emission from the early universe.</li>
+</ul>
+
+<hr />
+
+<h2 id="interests">Interests</h2>
+
+<ul>
+  <li>Experimental cosmology</li>
+  <li>Beyond Standard Model physics</li>
+  <li>Radio astronomical instruments</li>
+  <li>Superconducting &amp; low noise systems</li>
+</ul>
+
+<hr />
+
+<h2 id="education">Education</h2>
+
+<div class="education-item">
+  <div class="education-header">
+    <span class="degree">Ph.D. in Physics (expected Feb, 2031) </span>
+    <span class="edu-date">2025.02 – Present</span>
+  </div>
+  <div class="edu-institution">Korea Advanced Institute of Sci. and Tech. (KAIST), Department of Physics</div>
+  <div class="thesis-title">Project: “Development of 12-20 GHz receiver for CO line intensity mapping on z=4.8-8.6” (Advisor: Junhan Kim)</div>
+</div>
+
+<div class="education-item">
+  <div class="education-header">
+    <span class="degree">B.S. in Physics</span>
+    <span class="edu-date">2020.03 – 2025.02</span>
+  </div>
+  <div class="edu-institution">Korea Advanced Institute of Sci. and Tech. (KAIST), Department of Physics</div>
+  <div class="edu-details">
+    • Advanced Major in Physics, Individually Designed Major (Courses from Electrical engineering, Nuclear engineering)
+  </div>
+  <div class="thesis-title">Thesis: “Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP” (Advisor: Yannis K. Semertzidis)</div>
+</div>
+
+<hr />
+
+<h2 id="employment">Employment &amp; Experience</h2>
+
+<div class="employment-item">
+  <div class="employment-header">
+    <span class="job-title">Student Assistant</span>
+    <span class="job-date">Jan, 2023 - Dec, 2024</span>
+  </div>
+  <div class="job-location">
+    📍 Daejeon, South Korea
+  </div>
+  <div class="job-institution">
+    Center for Axion and Precision Physics Research, Institute for Basic Science
+  </div>
+  <div class="job-details">
+    • Experimental characterization of quantum noise limited RF circuits
+  </div>
+</div>
+
+<div class="employment-item">
+  <div class="employment-header">
+    <span class="job-title">Undergraduate Research Intern</span>
+    <div class="employment-meta">
+      <span class="job-date">2023.03 – 2024.02</span>
+      <span class="job-location">📍 Daejeon, South Korea</span>
+    </div>
+  </div>
+  <div class="job-institution">
+    Astrophysics Lab, KAIST
+  </div>
+  <div class="job-details">
+    • Developed calibration module for radio telescope backend.
+  </div>
+</div>
+
+<hr />
+
+<h2 id="publications">Publications</h2>
+
+<ol>
+  <li>홍길동 외, “High-sensitivity RF Receiver for Axion Dark Matter Search,” <em>Journal of Radio Astronomy</em>, 2024.</li>
+  <li>홍길동, “Feed Horn Gain Profile Simulation and Optimization,” <em>IEEE Trans. Microw. Theory Tech.</em>, 2023.</li>
+  <li>홍길동 외, “Cryogenic RF Chain Design for 3.1–3.7 GHz Haloscope,” <em>Review of Scientific Instruments</em>, 2022.</li>
+</ol>
+
+<hr />
+
+<h2 id="presentations">Presentations</h2>
+
+<ul>
+  <li>“RF Electronics Design for Dark Matter Detection,” KASI Workshop, 2025.04.</li>
+  <li>“Optimization of Feed Horn Gain Using HFSS Interpolation,” IA Symposium, 2024.10.</li>
+  <li>“Y-factor Method for System Noise Temperature Measurement,” ACC Meeting, 2024.06.</li>
+</ul>
+
+<hr />
+
+<h2 id="honors">Honors</h2>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Presidential Science Scholarship</span>
+    <span class="honor-date">Jun, 2025</span>
+  </div>
+  <div class="honor-institution">Korea Student Aid Foundation</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Encouragement Award of Undergrad. Research Program Workshop</span>
+    <span class="honor-date">Mar, 2025</span>
+  </div>
+  <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Outstanding Presentation Award</span>
+    <span class="honor-date">Apr, 2024</span>
+  </div>
+  <div class="honor-institution">Korean Physical Society</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">The Way To Stockholm (TWTS)</span>
+    <span class="honor-date">Dec, 2025</span>
+  </div>
+  <div class="honor-institution">Korea Foundation for Advanced Studies</div>
+</div>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Department of Physics Dean's list</span>
+    <span class="honor-date">Aug, 2023</span>
+  </div>
+  <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
+</div>
+
+<hr />
+
+<h2 id="teachings">Teachings</h2>
+
+<div class="honor-item">
+  <div class="honor-header">
+    <span class="honor-title">Radio Astronomy, Teaching Assistant</span>
+    <span class="honor-date">Spring semester, 2025</span>
+  </div>
+  <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
+</div>
+
+:ET

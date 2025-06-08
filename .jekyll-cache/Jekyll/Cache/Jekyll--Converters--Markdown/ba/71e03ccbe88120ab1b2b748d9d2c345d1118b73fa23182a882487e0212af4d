@@ -1,14 +1,9 @@
----
-layout: cv
-title: CV
----
-
-<!-- 
+I"�<!-- 
   아래 헤딩(##)에는 반드시 {#anchor} 형태의 id를 써줘야
   사이드바 네비게이션 링크가 각 섹션으로 이동합니다.
 -->
 
-## Basics {#basics}
+<h2 id="basics">Basics</h2>
 
 <div class="basics-grid">
   <div class="basic-row">
@@ -33,9 +28,9 @@ title: CV
   </div>
 </div>
 
----
+<hr />
 
-## Interests {#interests}
+<h2 id="interests">Interests</h2>
 
 <div class="interests-list">
 
@@ -44,11 +39,10 @@ title: CV
     <span class="interest-title">Observational Cosmology</span>
     <span class="interest-type research">Research</span>
   </div>
-  <div class="interest-details" markdown="1">
-  Development radio astronomical instruments.   
-  Constraining molecular/nuclear power spectrum of the early universe.  
-  Line intensity mapping of CO emission lines at z > 2.5.
-  </div>
+  <div class="interest-details">
+      <p>Constraining molecular/nuclear power spectrum of the early universe.<br />
+  Line intensity mapping of CO emission lines at z &gt; 2.5.</p>
+    </div>
 </div>
 
 <div class="interest-item">
@@ -56,28 +50,34 @@ title: CV
     <span class="interest-title">Dark Matter Detectors</span>
     <span class="interest-type research">Research</span>
   </div>
-  <div class="interest-details" markdown="1">
-  Quantum noise limited axion haloscope based on superconducting parametric amplifiers.
-  </div>
+  <div class="interest-details">
+
+      <p>Exploring dark matter candidates and axion detection techniques.</p>
+
+      <p><strong>현재 진행 중</strong></p>
+      <ol>
+        <li>Haloscope 실험 설계</li>
+        <li>Cryogenic amplifier noise measurement</li>
+      </ol>
+
+    </div>
 </div>
 
 <div class="interest-item">
   <div class="interest-header">
-    <span class="interest-title">Nuclear/Particle Physics Experiments</span>
+    <span class="interest-title">Radio astronomical instruments</span>
     <span class="interest-type interest">Interest</span>
   </div>
-  <div class="interest-details" markdown="1">
-  RF signal extraction/readouts.     
-  Particle calorimeters.      
-  Next generation neutrino detectors (DUNE, HyperK).    
+  <div class="interest-details">
+    Design and calibration of RF front-ends, antennas, and receivers.
   </div>
 </div>
 
 </div>
 
----
+<hr />
 
-## Education {#education}
+<h2 id="education">Education</h2>
 
 <div class="education-item">
   <div class="education-header">
@@ -100,9 +100,9 @@ title: CV
   <div class="thesis-title">Thesis: “Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP” (Advisor: Yannis K. Semertzidis)</div>
 </div>
 
----
+<hr />
 
-## Employment & Experience {#employment}
+<h2 id="employment">Employment &amp; Experience</h2>
 
 <div class="employment-item">
   <div class="employment-header">
@@ -138,25 +138,29 @@ title: CV
   <div class="job-details">• Experimental verification of quantum noise limited RF readouts for axion haloscope experiments.</div>
 </div>
 
----
+<hr />
 
-## Publications {#publications}
+<h2 id="publications">Publications</h2>
 
-1. 홍길동 외, “High-sensitivity RF Receiver for Axion Dark Matter Search,” *Journal of Radio Astronomy*, 2024.  
-2. 홍길동, “Feed Horn Gain Profile Simulation and Optimization,” *IEEE Trans. Microw. Theory Tech.*, 2023.  
-3. 홍길동 외, “Cryogenic RF Chain Design for 3.1–3.7 GHz Haloscope,” *Review of Scientific Instruments*, 2022.  
+<ol>
+  <li>홍길동 외, “High-sensitivity RF Receiver for Axion Dark Matter Search,” <em>Journal of Radio Astronomy</em>, 2024.</li>
+  <li>홍길동, “Feed Horn Gain Profile Simulation and Optimization,” <em>IEEE Trans. Microw. Theory Tech.</em>, 2023.</li>
+  <li>홍길동 외, “Cryogenic RF Chain Design for 3.1–3.7 GHz Haloscope,” <em>Review of Scientific Instruments</em>, 2022.</li>
+</ol>
 
----
+<hr />
 
-## Presentations {#presentations}
+<h2 id="presentations">Presentations</h2>
 
-- “RF Electronics Design for Dark Matter Detection,” KASI Workshop, 2025.04.  
-- “Optimization of Feed Horn Gain Using HFSS Interpolation,” IA Symposium, 2024.10.  
-- “Y-factor Method for System Noise Temperature Measurement,” ACC Meeting, 2024.06.  
+<ul>
+  <li>“RF Electronics Design for Dark Matter Detection,” KASI Workshop, 2025.04.</li>
+  <li>“Optimization of Feed Horn Gain Using HFSS Interpolation,” IA Symposium, 2024.10.</li>
+  <li>“Y-factor Method for System Noise Temperature Measurement,” ACC Meeting, 2024.06.</li>
+</ul>
 
----
+<hr />
 
-## Honors {#honors}
+<h2 id="honors">Honors</h2>
 
 <div class="honor-item">
   <div class="honor-header">
@@ -198,9 +202,9 @@ title: CV
   <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
 </div>
 
----
+<hr />
 
-## Teachings {#teachings}
+<h2 id="teachings">Teachings</h2>
 
 <div class="honor-item">
   <div class="honor-header">
@@ -208,5 +212,6 @@ title: CV
     <span class="honor-date">Spring semester, 2025</span>
   </div>
   <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
-</div> 
+</div>
 
+:ET

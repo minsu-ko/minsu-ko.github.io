@@ -1,4 +1,4 @@
-I"<!-- 
+I"<!-- 
   아래 헤딩(##)에는 반드시 {#anchor} 형태의 id를 써줘야
   사이드바 네비게이션 링크가 각 섹션으로 이동합니다.
 -->
@@ -15,16 +15,6 @@
 
 <hr />
 
-<h2 id="education">Education &amp; Experience</h2>
-
-<p><strong>Korea Advanced Institute of Sci. and Tech.</strong></p>
-<ul>
-  <li>B.S. in Physics, 2020.03 – 2025.02</li>
-  <li>M.S. in Physics, 2025.03 – Present</li>
-</ul>
-
-<hr />
-
 <h2 id="interests">Interests</h2>
 
 <ul>
@@ -33,6 +23,69 @@
   <li>Radio astronomical instruments</li>
   <li>Superconducting &amp; low noise systems</li>
 </ul>
+
+<hr />
+
+<h2 id="education">Education</h2>
+
+<div class="education-item">
+  <div class="education-header">
+    <span class="degree">Ph.D. in Physics (expected Feb, 2031) </span>
+    <span class="edu-date">2025.02 – Present</span>
+  </div>
+  <div class="edu-institution">Korea Advanced Institute of Sci. and Tech. (KAIST), Department of Physics</div>
+  <div class="thesis-title">Project: “Development of 12-20 GHz receiver for CO line intensity mapping on z=4.8-8.6” (Advisor: Junhan Kim)</div>
+</div>
+
+<div class="education-item">
+  <div class="education-header">
+    <span class="degree">B.S. in Physics</span>
+    <span class="edu-date">2020.03 – 2025.02</span>
+  </div>
+  <div class="edu-institution">Korea Advanced Institute of Sci. and Tech. (KAIST), Department of Physics</div>
+  <div class="edu-details">
+    • Advanced Major in Physics, Individually Designed Major (Courses from Electrical engineering, Nuclear engineering)
+  </div>
+  <div class="thesis-title">Thesis: “Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP” (Advisor: Yannis K. Semertzidis)</div>
+</div>
+
+<hr />
+
+<h2 id="employment">Employment &amp; Experience</h2>
+
+<div class="employment-item">
+  <div class="employment-header">
+    <!-- 1행: 직함 + 기간 -->
+    <div class="employment-row">
+      <span class="job-title">Ph.D. candidate</span>
+      <span class="job-date">Feb, 2025 – Present</span>
+    </div>
+    <!-- 2행: 기관 + 위치 -->
+    <div class="employment-row">
+      <span class="job-institution">Observational Cosmology and Astrophysics Lab. (ObsCAL), KAIST</span>
+      <span class="job-location">📍 Daejeon, South Korea</span>
+    </div>
+  </div>
+  <!-- 3행: 상세사항 -->
+  <div class="job-details">• Low noise heterodyne receiver development.</div>
+</div>
+
+<div class="employment-item">
+  <div class="employment-header">
+    <!-- 1행: 직함 + 기간 -->
+    <div class="employment-row">
+      <span class="job-title">Student Assistant</span>
+      <span class="job-date">Jan, 2023 – Dec, 2024</span>
+    </div>
+    <!-- 2행: 기관 + 위치 -->
+    <div class="employment-row">
+      <span class="job-institution">Center for Axion and Precision Physics Research, Institute for Basic Science (IBS/CAPP)</span>
+      <span class="job-location">📍 Daejeon, South Korea</span>
+    </div>
+  </div>
+  <!-- 3행: 상세사항 -->
+  <div class="job-details">• Experimental verification of quantum noise limited RF readouts for axion haloscope experiments.</div>
+</div>
 
 <hr />
 

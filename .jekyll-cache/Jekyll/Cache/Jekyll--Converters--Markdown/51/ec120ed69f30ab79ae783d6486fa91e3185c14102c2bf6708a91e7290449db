@@ -1,14 +1,9 @@
----
-layout: cv
-title: CV
----
-
-<!-- 
+I"<!-- 
   아래 헤딩(##)에는 반드시 {#anchor} 형태의 id를 써줘야
   사이드바 네비게이션 링크가 각 섹션으로 이동합니다.
 -->
 
-## Basics {#basics}
+<h2 id="basics">Basics</h2>
 
 <div class="basics-grid">
   <div class="basic-row">
@@ -33,46 +28,48 @@ title: CV
   </div>
 </div>
 
----
+<hr />
 
-## Interests {#interests}
+<h2 id="interests">Interests</h2>
 
 <div class="interests-list">
 
 <div class="interest-item">
   <div class="interest-header">
-    <span class="interest-title">Observational Cosmology</span>
+    <span class="interest-title">Experimental cosmology</span>
     <span class="interest-type research">Research</span>
   </div>
-  <div class="interest-details" markdown="1">
-  Development radio astronomical instruments.   
-  Constraining molecular/nuclear power spectrum of the early universe.  
-  Line intensity mapping of CO emission lines at z > 2.5.
-  </div>
+  <div class="interest-details">
+      <p>Constaining molecular/nuclear power spectrum of the early universe.</p>
+    </div>
 </div>
 
 <div class="interest-item">
   <div class="interest-header">
-    <span class="interest-title">Dark Matter Detectors</span>
+    <span class="interest-title">Beyond Standard Model physics</span>
     <span class="interest-type research">Research</span>
   </div>
-  <div class="interest-details" markdown="1">
-  Quantum noise limited axion haloscope based on superconducting parametric amplifiers.
-  </div>
+  <div class="interest-details">
+
+      <p>Exploring dark matter candidates and axion detection techniques.</p>
+
+      <p><strong>현재 진행 중</strong></p>
+      <ol>
+        <li>Haloscope 실험 설계</li>
+        <li>Cryogenic amplifier noise measurement</li>
+      </ol>
+
+    </div>
 </div>
 
 <div class="interest-item">
   <div class="interest-header">
-    <span class="interest-title">Nuclear/Particle Physics Experiments</span>
+    <span class="interest-title">Radio astronomical instruments</span>
     <span class="interest-type interest">Interest</span>
   </div>
-  <div class="interest-details" markdown="1">
-  RF signal extraction/readouts.     
-  Particle calorimeters.      
-  Next generation neutrino detectors (DUNE, HyperK).    
+  <div class="interest-details">
+    Design and calibration of RF front-ends, antennas, and receivers.
   </div>
-</div>
-
 </div>
 
 ---
@@ -102,7 +99,7 @@ title: CV
 
 ---
 
-## Employment & Experience {#employment}
+## Employment &amp; Experience {#employment}
 
 <div class="employment-item">
   <div class="employment-header">
@@ -210,3 +207,5 @@ title: CV
   <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
 </div> 
 
+</div>
+:ET
