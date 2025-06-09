@@ -3,4 +3,4 @@ layout: gallery
 title: Gallery
 ---
 
-Some historical moments.
+Some historical moments (sellected).
