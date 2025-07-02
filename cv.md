@@ -29,7 +29,7 @@ title: CV
   </div>
   <div class="basic-row">
     <span class="basic-label">Working On</span>
-    <span class="basic-value">Development of 12–20 GHz radio astronomical receiver for early-universe CO line</span>
+    <span class="basic-value">Development of 12–20 GHz radio astronomical receiver for the high z CO line</span>
   </div>
 </div>
 
@@ -47,7 +47,7 @@ title: CV
   <div class="interest-details" markdown="1">
   Development radio astronomical instruments.   
   Constraining molecular/nuclear power spectrum of the early universe.  
-  Line intensity mapping of CO emission lines at z > 2.5.
+  Line intensity mapping of CO emission lines at z > 4.5.
   </div>
 </div>
 
@@ -352,7 +352,7 @@ title: CV
 <div class="honor-item grid">
   <!-- 왼쪽 칸: 제목 + 기관 -->
   <div class="honor-info">
-    <div class="honor-title">Presidential Science Scholarship</div>
+    <div class="honor-title">Korean Ministry of Science and ICT</div>
     <div class="honor-institution">Korea Student Aid Foundation</div>
   </div>
   <!-- 오른쪽 칸: 날짜 -->
