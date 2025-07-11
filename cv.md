@@ -352,6 +352,18 @@ title: CV
 <div class="honor-item grid">
   <!-- 왼쪽 칸: 제목 + 기관 -->
   <div class="honor-info">
+    <div class="honor-title">SBS Foundation Scholarship</div>
+    <div class="honor-institution">SBS Foundation</div>
+  </div>
+  <!-- 오른쪽 칸: 날짜 -->
+  <div class="honor-meta">
+    <div class="honor-date">Jun, 2025</div>
+  </div>
+</div>
+
+<div class="honor-item grid">
+  <!-- 왼쪽 칸: 제목 + 기관 -->
+  <div class="honor-info">
     <div class="honor-title">Presidential Science Scholarship</div>
     <div class="honor-institution">Korean Ministry of Science and ICT</div>
   </div>
