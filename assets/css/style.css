@@ -505,6 +505,8 @@ nav ul li.social-icon a:hover img {
 .job-details {
   font-size: 0.9rem;
   color: #444;
+  white-space: pre-line;   /* 줄바꿈(\n) 인식 */
+  line-height: 1.5;        /* 줄 간격 조금 넉넉하게 */
 }
 
 .job-date {
@@ -761,5 +763,6 @@ nav ul li.social-icon a:hover img {
   font-size: 0.85rem;
   color: #999;
 }
+
 
 
