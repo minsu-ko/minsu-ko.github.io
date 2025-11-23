@@ -45,9 +45,9 @@ title: CV
     <span class="interest-type research">Research</span>
   </div>
   <div class="interest-details" markdown="1">
-  Development radio astronomical instruments.   
-  Constraining molecular/nuclear power spectrum of the early universe.  
-  Line intensity mapping of CO emission lines at z > 2.5.
+  Development of radio astronomical instruments.   
+  Line-intensity mapping of CO emission lines at high redshift.
+  Faint signal & cross-correlation analysis.
   </div>
 </div>
 
@@ -57,7 +57,7 @@ title: CV
     <span class="interest-type research">Research</span>
   </div>
   <div class="interest-details" markdown="1">
-  Quantum noise limited axion haloscope based on superconducting parametric amplifiers.
+  Quantum noise limited axion haloscope readouts based on superconducting parametric amplifiers.
   </div>
 </div>
 
@@ -67,8 +67,7 @@ title: CV
     <span class="interest-type interest">Interest</span>
   </div>
   <div class="interest-details" markdown="1">
-  RF signal extraction/readouts & beam line.     
-  Particle calorimeters.      
+  RF signal extraction/readouts & beam control.           
   Next generation neutrino detectors (DUNE, HyperK).    
   </div>
 </div>
@@ -85,7 +84,7 @@ title: CV
     <span class="edu-date">Feb, 2025 – Present</span>
   </div>
   <div class="edu-institution">Korea Advanced Institute of Sci. and Tech. (KAIST), Department of Physics</div>
-  <div class="thesis-title">Project: “Development of 12-20 GHz receiver for CO line intensity mapping on z=4.8-8.6” (Advisor: Junhan Kim)</div>
+  <div class="thesis-title">Project: “Development of 12-20 GHz receiver for CO line-intensity mapping on z=4.8-8.6” (Advisor: Junhan Kim)</div>
 </div>
 
 <div class="education-item">
@@ -458,6 +457,16 @@ title: CV
 ---
 
 ## Teachings {#teachings}
+
+<div class="honor-item grid">
+  <div class="honor-info">
+    <div class="honor-title">General Physics I, Teaching Assistant</div>
+    <div class="honor-institution">Korea Advanced Institute of Sci. and Tech.</div>
+  </div>
+  <div class="honor-meta">
+    <div class="honor-date">Sep, 2025 - Dec, 2025</div>
+  </div>
+</div>
 
 <div class="honor-item grid">
   <div class="honor-info">
