@@ -34,9 +34,7 @@ My main research focus is **instrumentation for observational cosmology and part
 
 </div>
 
-<div class="about-image">
-  <img src="{{ '/assets/gallery/_main.png' | relative_url }}" alt="main pic" />
-</div>
+<div class="about-image"> <img src="{{ '/assets/gallery/main.png' | relative_url }}" alt="My Photo" /> </div>
 
 </div>
 
