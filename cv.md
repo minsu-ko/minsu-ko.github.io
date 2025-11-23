@@ -223,6 +223,48 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
+      <a href="https://www.researchgate.net/publication/397884171_Optimized_Frontend_Components_of_the_Prototype_Ku-band_receiver_for_the_COMAP-EoR_Experiment" target="_blank" rel="noopener">
+        Optimized Frontend Components of the Prototype Ku-band Receiver for the COMAP-EoR Experiment
+      </a>
+    </div>
+    <div class="presentation-author">MinSu Ko, Wooseok Kang et al.</div>
+    <div class="presentation-conference">
+      2025 East Asia Submillimeter-wave Receiver Workshop
+    </div>
+  </div>
+  <!-- 오른쪽 칸: 날짜, 도시 -->
+  <div class="presentation-meta">
+    <span class="presentation-tag poster">Oral</span>
+    <div class="presentation-date">Nov, 2025</div>
+    <div class="presentation-location">📍 Taipei, Taiwan</div>
+  </div>
+</div>
+
+<div class="presentation-item grid">
+  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
+  <div class="presentation-info">
+    <div class="presentation-title">
+      <a href="https://www.researchgate.net/publication/397884382_Optimized_Frontend_Components_of_the_Prototype_Ku-band_Receiver_for_the_COMAP-EoR_Experiment" target="_blank" rel="noopener">
+        Optimized Frontend Components of the Prototype Ku-band Receiver for the COMAP-EoR Experiment
+      </a>
+    </div>
+    <div class="presentation-author">MinSu Ko, Wooseok Kang et al.</div>
+    <div class="presentation-conference">
+      2025 Korean Astronomical Society Fall Meeting
+    </div>
+  </div>
+  <!-- 오른쪽 칸: 날짜, 도시 -->
+  <div class="presentation-meta">
+    <span class="presentation-tag poster">Poster</span>
+    <div class="presentation-date">Oct, 2025</div>
+    <div class="presentation-location">📍 Jeju island, South Korea</div>
+  </div>
+</div>
+
+<div class="presentation-item grid">
+  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
+  <div class="presentation-info">
+    <div class="presentation-title">
       <a href="" target="_blank" rel="noopener">
         Development Status of a Prototype Ku-band Receiver for the COMAP-EoR Experiment
       </a>
