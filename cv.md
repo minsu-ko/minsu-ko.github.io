@@ -111,7 +111,8 @@ title: CV
       Observational Cosmology and Astrophysics Lab. (ObsCAL), KAIST
     </div>
     <div class="job-details">
-      • Low noise heterodyne receiver development.
+      • Cross-correlation analysis of line-intensity mapping data.
+      • Corrugated feed & waveguide components optimization.
     </div>
   </div>
 
@@ -129,7 +130,8 @@ title: CV
       Center for Axion and Precision Physics Research, Institute for Basic Science (IBS/CAPP)
     </div>
     <div class="job-details">
-      • Experimental verification of quantum noise limited RF readouts for axion haloscope experiments.
+      • Experimental verification of Josephson parametric amplifiers.
+      • Dry dilution fridge, cryocooler operation & maintanance.
     </div>
   </div>
   <div class="employment-meta">
