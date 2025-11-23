@@ -111,7 +111,7 @@ title: CV
       Observational Cosmology and Astrophysics Lab. (ObsCAL), KAIST
     </div>
     <div class="job-details">
-      • Cross-correlation analysis of line-intensity mapping data.
+      • Cross-correlation analysis of line-intensity mapping data.<br>
       • Corrugated feed & waveguide components optimization.
     </div>
   </div>
@@ -130,7 +130,7 @@ title: CV
       Center for Axion and Precision Physics Research, Institute for Basic Science (IBS/CAPP)
     </div>
     <div class="job-details">
-      • Experimental verification of Josephson parametric amplifiers.
+      • Experimental verification of Josephson parametric amplifiers.<br>
       • Dry dilution fridge, cryocooler operation & maintanance.
     </div>
   </div>
