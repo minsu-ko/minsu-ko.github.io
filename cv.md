@@ -234,7 +234,7 @@ title: CV
   </div>
   <!-- 오른쪽 칸: 날짜, 도시 -->
   <div class="presentation-meta">
-    <span class="presentation-tag poster">Oral</span>
+    <span class="presentation-tag oral">Oral</span>
     <div class="presentation-date">Nov, 2025</div>
     <div class="presentation-location">📍 Taipei, Taiwan</div>
   </div>
