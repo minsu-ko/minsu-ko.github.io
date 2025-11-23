@@ -14,12 +14,12 @@ Korea Advanced Institute of Science and Technology (KAIST)
 
 ---
 
-I'm an **experimental physicist** interested in:
+I'm an experimental physicist interested in:
 
-- Experimental cosmology  
-- Beyond Standard Model physics  
-- Radio astronomical instrumentation  
-- Superconducting & low-noise systems  
+- Experimental cosmology, faint signal astronomy  
+- Beyond Standard Model experiments
+- Instruments in radio astronomy
+- Superconducting devices (quantum noise limited amplifiers)
 
 My main research focus is **instrumentation for observational cosmology and particle physics**.
 
@@ -27,16 +27,15 @@ My main research focus is **instrumentation for observational cosmology and part
 
 ## Current Projects
 
-1. **12–20 GHz receiver development** for carbon monoxide line-intensity mapping  
-   Targeting **z > 4.8** (Ph.D. thesis instrument)
+1. 12–20 GHz receiver development for carbon monoxide line-intensity mapping  
+   Targeting z > 4.8 in COMAP-EoR project.
 
-2. **Quantum-noise-limited instrumentation** for axion dark matter detectors
+2. Wideband quantum noise limited readout based on Josephson parametric amplifiers for axion haloscope experiments.
 
 </div>
 
 <div class="about-image">
-  <img src="{{ '/assets/gallery/bf4.jpeg' | relative_url }}" alt="Photo 1" />
-  <img src="{{ '/assets/gallery/2025_ovro_milkyway.JPG' | relative_url }}" alt="Photo 2" />
+  <img src="{{ '/assets/gallery/_main.png' | relative_url }}" alt="main pic" />
 </div>
 
 </div>
