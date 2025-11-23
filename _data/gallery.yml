@@ -5,6 +5,12 @@
 # 위쪽일수록 최근
 # ──────────────────────────────────────────────────────
 
+- image: "/assets/gallery/2025_kas_fall.JPG"
+  caption: "Oct, 2025. Korea Astronomical Society 2025 fall meeting. Poster."
+
+- image: "/assets/gallery/2025_ovro_pathfinder.JPG"
+  caption: "Aug, 2025. At OVRO, with COMAP Pathfinder telescope."
+
 - image: "/assets/gallery/urp.JPG"
   caption: "Apr, 2025. KAIST URP workshop poster."
 
