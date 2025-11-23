@@ -762,17 +762,4 @@ nav ul li.social-icon a:hover img {
   color: #999;
 }
 
-/* for main page, added Nov. 23 2025 */
-.profile-image {
-  width: 260px;     /* 사진 폭 조절: 240~300px 사이 추천 */
-  margin: 1rem 0;
-}
-
-.profile-image img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-}
-
 
