@@ -1,56 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV | MinSu Ko</title>
-  <!-- 반드시 올바른 경로로 style.css를 불러와야 합니다 -->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
-  <!-- 상단 공통 네비게이션 -->
-  <header>
-    <nav>
-  <ul>
-    <li><a href="/">About</a></li>
-    <li><a href="/cv.html">CV</a></li>
-    <li><a href="/gallery.html">Gallery</a></li>
-    <li class="social-icon">
-      <a href="https://scholar.google.com/citations?user=H4vZJ-QAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/google-scholar.png" alt="Google Scholar" />
-      </a>
-    </li>
-    <li class="social-icon">
-      <a href="https://www.researchgate.net/profile/Minsu-Ko-3?ev=hdr_xprf" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/researchgate.png" alt="ResearchGate" />
-      </a>
-    </li>
-  </ul>
-</nav>
-
-  </header>
-
-  <div class="cv-container">
-    <!-- 왼쪽 사이드바 -->
-    <aside class="sidebar">
-      <nav>
-        <ul>
-          <li><a href="#basics">Basics</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#employment">Employment</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#presentations">Presentations</a></li>
-          <li><a href="#honors">Honors</a></li>
-          <li><a href="#teachings">Teachings</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <!-- 오른쪽 메인 콘텐츠 -->
-    <section class="cv-content">
-      <h1>CV</h1>
-      <!-- 
+I"�D<!-- 
   아래 헤딩(##)에는 반드시 {#anchor} 형태의 id를 써줘야
   사이드바 네비게이션 링크가 각 섹션으로 이동합니다.
 -->
@@ -527,12 +475,4 @@
   </div>
 </div>
 
-
-    </section>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 MinSu Ko. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+:ET
