@@ -111,7 +111,9 @@ title: CV
       Observational Cosmology and Astrophysics Lab. (ObsCAL), KAIST
     </div>
     <div class="job-details">
-      • Cross-correlation analysis of line-intensity mapping data.<br>
+      • Cross-correlation analysis of line-intensity mapping data.
+    </div>
+    <div class="job-details">
       • Corrugated feed & waveguide components optimization.
     </div>
   </div>
