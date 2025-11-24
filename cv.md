@@ -110,10 +110,10 @@ title: CV
     <div class="job-institution">
       Observational Cosmology and Astrophysics Lab. (ObsCAL), KAIST
     </div>
-    <div class="job-details">
+    <div class="edu-details">
       • Cross-correlation analysis of line-intensity mapping data.
     </div>
-    <div class="job-details">
+    <div class="edu-details">
       • Corrugated feed & waveguide components optimization.
     </div>
   </div>
@@ -131,11 +131,14 @@ title: CV
     <div class="job-institution">
       Center for Axion and Precision Physics Research, Institute for Basic Science (IBS/CAPP)
     </div>
-    <ul class="job-details">
-      <li>Experimental verification of Josephson parametric amplifiers.</li>
-      <li>Dry dilution fridge, cryocooler operation & maintenance.</li>
-    </ul>
+    <div class="edu-details">
+      • Experimental verification of Josephson parametric amplifiers.
+    </div>
+    <div class="edu-details">
+      • Dry dilution fridge, cryocooler operation & maintenance.
+    </div>
   </div>
+  
   <div class="employment-meta">
     <div class="job-date">Jan, 2023 – Dec, 2024</div>
     <div class="job-location">📍 Daejeon, South Korea</div>
