@@ -129,10 +129,10 @@ title: CV
     <div class="job-institution">
       Center for Axion and Precision Physics Research, Institute for Basic Science (IBS/CAPP)
     </div>
-    <div class="job-details">
-      • Experimental verification of Josephson parametric amplifiers.<br>
-      • Dry dilution fridge, cryocooler operation & maintanance.
-    </div>
+    <ul class="job-details">
+      <li>Experimental verification of Josephson parametric amplifiers.</li>
+      <li>Dry dilution fridge, cryocooler operation & maintenance.</li>
+    </ul>
   </div>
   <div class="employment-meta">
     <div class="job-date">Jan, 2023 – Dec, 2024</div>
