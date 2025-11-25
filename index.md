@@ -29,6 +29,6 @@ My main research focus is **instrumentation for observational cosmology and part
 
 </div>
 
-<div class="about-image"> <img src="{{ '/assets/gallery/2025_ovro_milkyway.JPG' | relative_url }}" alt="My Photo" /> </div>
+<div class="about-image"> <img src="{{ '/assets/gallery/2025_ovro_milkyway_re.jpg' | relative_url }}" alt="My Photo" /> </div>
 
 </div>
