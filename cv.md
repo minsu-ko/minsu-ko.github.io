@@ -153,30 +153,6 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 저널 -->
   <div class="publication-info">
     <div class="publication-title">
-      <a href="https://www.mdpi.com/2673-9984/11/1/5" target="_blank" rel="noopener">
-        Approaching the Quantum Limit in Axion Detection at IBS-CAPP and IBS-DMAG
-      </a>
-    </div>
-    <div class="publication-authors">
-      Sergey V. Uchaikin, et al.
-    </div>
-    <div class="publication-journal">
-      MDPI Physical Sciences Forum
-    </div>
-  </div>
-
-  <!-- 오른쪽 칸: 날짜, (선택) 위치 -->
-  <div class="publication-meta">
-    <div class="publication-date">Dec, 2025</div>
-    <!-- 만약 장소를 표시하고 싶다면 아래 줄을 추가 -->
-    <!-- <div class="publication-location">📍 Daejeon, South Korea</div> -->
-  </div>
-</div>
-
-<div class="publication-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 저널 -->
-  <div class="publication-info">
-    <div class="publication-title">
       <a href="https://doi.org/10.3389/fphy.2024.1437680" target="_blank" rel="noopener">
         Josephson parametric amplifier based quantum noise limited amplifier development for axion search experiments in CAPP
       </a>
