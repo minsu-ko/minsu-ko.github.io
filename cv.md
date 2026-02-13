@@ -153,6 +153,30 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 저널 -->
   <div class="publication-info">
     <div class="publication-title">
+      <a href="https://iopscience.iop.org/article/10.1088/1361-6668/ae3a1d/meta" target="_blank" rel="noopener">
+        Multi-JPA configuration to broaden amplification bandwidth for axion haloscope experiments
+      </a>
+    </div>
+    <div class="publication-authors">
+      Boris I. Ivanov, et al.
+    </div>
+    <div class="publication-journal">
+      Superconductor Science and Technology
+    </div>
+  </div>
+
+  <!-- 오른쪽 칸: 날짜, (선택) 위치 -->
+  <div class="publication-meta">
+    <div class="publication-date">Feb, 2026</div>
+    <!-- 만약 장소를 표시하고 싶다면 아래 줄을 추가 -->
+    <!-- <div class="publication-location">📍 Daejeon, South Korea</div> -->
+  </div>
+</div>
+
+<div class="publication-item grid">
+  <!-- 왼쪽 칸: 제목, 저자, 저널 -->
+  <div class="publication-info">
+    <div class="publication-title">
       <a href="https://doi.org/10.3389/fphy.2024.1437680" target="_blank" rel="noopener">
         Josephson parametric amplifier based quantum noise limited amplifier development for axion search experiments in CAPP
       </a>
