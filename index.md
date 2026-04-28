@@ -8,7 +8,7 @@ title: ""
 
 # MinSu Ko
 
-**Master–Doctoral Integrated Program (1st year), Physics** Korea Advanced Institute of Science and Technology (KAIST)
+**Master–Doctoral Integrated Program (2nd year), Physics** Korea Advanced Institute of Science and Technology (KAIST)
 
 ---
 
