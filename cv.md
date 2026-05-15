@@ -277,6 +277,27 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
+      <a href="">
+        Prototype Receiver Development for COMAP-EoR: Toward CO Line-Intensity Mapping at z=4.8–8.5
+      </a>
+    </div>
+    <div class="presentation-author">MinSu Ko, Junhan kim et al.</div>
+    <div class="presentation-conference">
+      The Korean Physical Society 2026 Spring Meeting
+    </div>
+  </div>
+  <!-- 오른쪽 칸: 날짜, 도시 -->
+  <div class="presentation-meta">
+    <span class="presentation-tag oral">Oral</span>
+    <div class="presentation-date">Apr, 2026</div>
+    <div class="presentation-location">📍 Daejeon, South Korea</div>
+  </div>
+</div>
+
+<div class="presentation-item grid">
+  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
+  <div class="presentation-info">
+    <div class="presentation-title">
       <a href="https://www.researchgate.net/publication/397884171_Optimized_Frontend_Components_of_the_Prototype_Ku-band_receiver_for_the_COMAP-EoR_Experiment" target="_blank" rel="noopener">
         Optimized Frontend Components of the Prototype Ku-band Receiver for the COMAP-EoR Experiment
       </a>
@@ -444,6 +465,16 @@ title: CV
 ---
 
 ## Honors {#honors}
+
+<div class="honor-item grid">
+  <div class="honor-info">
+    <div class="honor-title">Outstanding Presentation Award</div>
+    <div class="honor-institution">Korean Physical Society</div>
+  </div>
+  <div class="honor-meta">
+    <div class="honor-date">May, 2026</div>
+  </div>
+</div>
 
 <div class="honor-item grid">
   <!-- 왼쪽 칸: 제목 + 기관 -->
