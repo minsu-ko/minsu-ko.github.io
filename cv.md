@@ -158,7 +158,7 @@ title: CV
       </a>
     </div>
     <div class="publication-authors">
-      Boris I. Ivanov, et al.
+      Boris I. Ivanov et al.
     </div>
     <div class="publication-journal">
       Superconductor Science and Technology
@@ -182,7 +182,7 @@ title: CV
       </a>
     </div>
     <div class="publication-authors">
-      Sergey V. Uchaikin, et al.
+      Sergey V. Uchaikin et al.
     </div>
     <div class="publication-journal">
       MDPI Physical Sciences Forum
@@ -206,7 +206,7 @@ title: CV
       </a>
     </div>
     <div class="publication-authors">
-      Sergey V. Uchaikin, et al.
+      Sergey V. Uchaikin et al.
     </div>
     <div class="publication-journal">
       Frontiers in Physics
@@ -230,7 +230,7 @@ title: CV
       </a>
     </div>
     <div class="publication-authors">
-      Jinmyeong Kim, MinSu Ko, et al.
+      Jinmyeong Kim, MinSu Ko et al.
     </div>
     <div class="publication-journal">
       Preprint
@@ -254,7 +254,7 @@ title: CV
       </a>
     </div>
     <div class="publication-authors">
-      MinSu Ko, et al.
+      MinSu Ko et al.
     </div>
     <div class="publication-journal">
       2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)
@@ -344,7 +344,7 @@ title: CV
         Development Status of a Prototype Ku-band Receiver for the COMAP-EoR Experiment
       </a>
     </div>
-    <div class="presentation-author">Wooseok Kang, MinSu Ko, et al.</div>
+    <div class="presentation-author">Wooseok Kang, MinSu Ko et al.</div>
     <div class="presentation-conference">
       2025 Korean Astronomical Society Spring Meeting
     </div>
@@ -365,7 +365,7 @@ title: CV
         Lumped-element Josephson Parametric Amplifier For Wideband Axion Haloscope Readout of DMAG
       </a>
     </div>
-    <div class="presentation-author">MinSu Ko, et al.</div>
+    <div class="presentation-author">MinSu Ko et al.</div>
     <div class="presentation-conference">
       2025 Korean Astronomical Society Spring Meeting
     </div>
@@ -386,7 +386,7 @@ title: CV
         Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP
       </a>
     </div>
-    <div class="presentation-author">MinSu Ko, et al.</div>
+    <div class="presentation-author">MinSu Ko et al.</div>
     <div class="presentation-conference">
       KAIST Undergrad. Research Program Workshop
     </div>
@@ -407,7 +407,7 @@ title: CV
         Characterization of Parallel-Connected Josephson Parametric Amplifiers for Axion Search Experiments
       </a>
     </div>
-    <div class="presentation-author">MinSu Ko, et al.</div>
+    <div class="presentation-author">MinSu Ko et al.</div>
     <div class="presentation-conference">
       The Korean Physical Society 2024 Spring Meeting
     </div>
@@ -428,7 +428,7 @@ title: CV
         Methods for Extending the Scanning Frequency Range of Flux-Driven Josephson Parametric Amplifiers Designed for Axion Search Experiments
       </a>
     </div>
-    <div class="presentation-author">Jinmeyong Kim, MinSu Ko, et al.</div>
+    <div class="presentation-author">Jinmeyong Kim, MinSu Ko et al.</div>
     <div class="presentation-conference">
       The 20th International Conference on Low Temperature Detectors (LTD 20)
     </div>
@@ -449,7 +449,7 @@ title: CV
         Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit
       </a>
     </div>
-    <div class="presentation-author">MinSu Ko, et al.</div>
+    <div class="presentation-author">MinSu Ko et al.</div>
     <div class="presentation-conference">
       2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)
     </div>
