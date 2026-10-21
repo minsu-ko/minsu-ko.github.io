@@ -1,21 +1,19 @@
 {%- comment -%}
-  포스터 미리보기 썸네일. 클릭하면 PDF가 새 탭에서 열립니다.
-  사용법: {% include poster-thumb.html pdf="/assets/posters/파일명.pdf" %}
-  - 같은 이름의 .jpg(예: 파일명.jpg)가 있으면 미리보기 이미지로 사용합니다.
-    (_scripts/make-poster-thumbs.sh 로 PDF 첫 페이지에서 생성)
-  - PDF 파일이 아직 없으면 아무것도 표시하지 않습니다.
+  포스터 미리보기 썸네일. 클릭하면 ResearchGate 등 외부 링크로 이동합니다.
+  사용법: {% include poster-thumb.html img="/assets/posters/파일명.jpg" href="https://www.researchgate.net/..." %}
+  - href를 비워두면 '아직 업로드되지 않음' 안내 페이지로 이동합니다.
+  - 미리보기 jpg는 _scripts/make-poster-thumbs.sh 로 PDF에서 생성합니다. (PDF 원본은 커밋하지 않음)
 {%- endcomment -%}
-{%- assign poster_pdf = include.pdf -%}
-{%- assign poster_img = poster_pdf | replace: '.pdf', '.jpg' -%}
-{%- assign poster_pdf_file = site.static_files | where: "path", poster_pdf | first -%}
-{%- assign poster_img_file = site.static_files | where: "path", poster_img | first -%}
-{%- if poster_pdf_file -%}
-<a class="poster-thumb" href="{{ poster_pdf | relative_url }}" target="_blank" rel="noopener" title="Open poster (PDF)">
-  {%- if poster_img_file -%}
-  <img src="{{ poster_img | relative_url }}" alt="Poster preview" loading="lazy" />
-  {%- else -%}
-  <span class="poster-thumb-fallback">PDF</span>
-  {%- endif -%}
-  <span class="poster-thumb-badge">PDF ↗</span>
-</a>
+{%- if include.href and include.href != "" -%}
+  {%- assign poster_href = include.href -%}
+  {%- assign poster_badge = "ResearchGate ↗" -%}
+  {%- assign poster_external = true -%}
+{%- else -%}
+  {%- assign poster_href = "/poster-pending.html" | relative_url -%}
+  {%- assign poster_badge = "Coming soon" -%}
+  {%- assign poster_external = false -%}
 {%- endif -%}
+<a class="poster-thumb{% unless poster_external %} pending{% endunless %}" href="{{ poster_href }}"{% if poster_external %} target="_blank" rel="noopener"{% endif %} title="{{ poster_badge }}">
+  <img src="{{ include.img | relative_url }}" alt="Poster preview" loading="lazy" />
+  <span class="poster-thumb-badge">{{ poster_badge }}</span>
+</a>

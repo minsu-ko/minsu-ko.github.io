@@ -319,7 +319,7 @@ title: CV
 </div>
 
 <div class="presentation-item grid">
-  {% include poster-thumb.html pdf="/assets/posters/2025-kas-fall-comap-frontend.pdf" %}
+  {% include poster-thumb.html img="/assets/posters/2025-kas-fall-poster.jpg" href="https://www.researchgate.net/publication/397884382_Optimized_Frontend_Components_of_the_Prototype_Ku-band_Receiver_for_the_COMAP-EoR_Experiment" %}
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
@@ -339,7 +339,7 @@ title: CV
 </div>
 
 <div class="presentation-item grid">
-  {% include poster-thumb.html pdf="/assets/posters/2025-kas-spring-comap-status.pdf" %}
+  {% include poster-thumb.html img="/assets/posters/2025-kas-spring-poster2.jpg" href="" %}
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
@@ -359,7 +359,7 @@ title: CV
 </div>
 
 <div class="presentation-item grid">
-  {% include poster-thumb.html pdf="/assets/posters/2025-kas-spring-lumped-jpa.pdf" %}
+  {% include poster-thumb.html img="/assets/posters/2025-kas-spring-poster1.jpg" href="https://www.researchgate.net/publication/392017881_Lumped-element_Josephson_Parametric_Amplifier_For_Wideband_Axion_Haloscope_Readout_of_DMAG?_sg%5B0%5D=4r27y4lKkBfO1-BzC9oFmVeT0VvSZFmLxL_Qq6l1t6hJUEQ7PytDMaWOTHgpwiMDTB6ccGlaF2Sf66v2VA4b1NLIFLN37TEVWCFa3jpv.Lu0Q2wmuZW9fiXck2Yv2idtV7JllDP9WXHOJzfalXwqXH6WGzcz69AmbRhH0KQGq_oV0V-OBFZ36VnqRS8d_1A&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQifX0" %}
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
@@ -417,7 +417,7 @@ title: CV
 </div>
 
 <div class="presentation-item grid">
-  {% include poster-thumb.html pdf="/assets/posters/2023-ltd20-jpa-frequency-range.pdf" %}
+  {% include poster-thumb.html img="/assets/posters/2023-ltd20-poster.jpg" href="" %}
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
