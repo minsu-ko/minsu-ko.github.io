@@ -15,9 +15,14 @@ layout: default
         {%- assign month = parts | first | split: ',' | first -%}
         {%- assign desc_size = parts | size | minus: 1 -%}
         {%- assign desc = parts | slice: 1, desc_size | join: '. ' -%}
+        {%- comment -%} 그리드에는 가벼운 썸네일(_scripts/make-gallery-thumbs.py), 클릭 시 원본 {%- endcomment -%}
+        {%- assign file_base = item.image | split: '/' | last | split: '.' | first -%}
+        {%- assign thumb = '/assets/gallery/thumbs/' | append: file_base | append: '.jpg' -%}
+        {%- assign thumb_file = site.static_files | where: "path", thumb | first -%}
+        {%- unless thumb_file -%}{%- assign thumb = item.image -%}{%- endunless -%}
         <figure class="gallery-card">
           <a href="{{ item.image | relative_url }}" target="_blank" rel="noopener">
-            <img src="{{ item.image | relative_url }}" alt="{{ item.caption }}" loading="lazy" />
+            <img src="{{ thumb | relative_url }}" alt="{{ item.caption }}" loading="lazy" decoding="async" />
           </a>
           <figcaption>
             <span class="gallery-date">{{ month }}</span>
