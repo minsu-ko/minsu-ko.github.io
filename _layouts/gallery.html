@@ -2,29 +2,30 @@
 layout: default
 ---
 <article class="gallery-page">
-  <div class="gallery-header">
-    <h1>{{ page.title }}</h1>
-    <div class="gallery-description">
-      {{ content }}
-    </div>
-  </div>
+  <h1 class="gallery-title">{{ page.title }}</h1>
 
-  <!-- 캡션은 "Mon, YYYY. 설명" 형식 → 날짜와 설명을 나눠서 표시 -->
-  <div class="gallery-grid">
-    {% for item in site.data.gallery %}
-      {%- assign parts = item.caption | split: '. ' -%}
-      {%- assign date = parts | first -%}
-      {%- assign desc_size = parts | size | minus: 1 -%}
-      {%- assign desc = parts | slice: 1, desc_size | join: '. ' -%}
-      <figure class="gallery-card">
-        <a href="{{ item.image | relative_url }}" target="_blank" rel="noopener">
-          <img src="{{ item.image | relative_url }}" alt="{{ item.caption }}" loading="lazy" />
-        </a>
-        <figcaption>
-          <span class="gallery-date">{{ date }}</span>
-          {{ desc }}
-        </figcaption>
-      </figure>
-    {% endfor %}
-  </div>
+  <!-- 캡션 "Mon, YYYY. 설명" 에서 연도를 뽑아 연도별로 묶음 (데이터 순서 = 최신순 유지) -->
+  {%- assign years = site.data.gallery | group_by_exp: "item", "item.caption | split: '. ' | first | split: ', ' | last" -%}
+  {% for year in years %}
+  <section class="gallery-year">
+    <h2 class="gallery-year-label">{{ year.name }}</h2>
+    <div class="gallery-grid">
+      {% for item in year.items %}
+        {%- assign parts = item.caption | split: '. ' -%}
+        {%- assign month = parts | first | split: ',' | first -%}
+        {%- assign desc_size = parts | size | minus: 1 -%}
+        {%- assign desc = parts | slice: 1, desc_size | join: '. ' -%}
+        <figure class="gallery-card">
+          <a href="{{ item.image | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ item.image | relative_url }}" alt="{{ item.caption }}" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="gallery-date">{{ month }}</span>
+            {{ desc }}
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
 </article>

@@ -160,42 +160,57 @@ footer {
 
 /* ─────────────────────────────────────────────────────────────
    6) Gallery 전용 스타일
-   - 3열 메이슨리(태블릿 2열, 모바일 1열), 날짜/설명 분리
+   - 연도별 묶음, 3열 그리드(태블릿 2열, 모바일 1열), 4:5 카드
 ──────────────────────────────────────────────────────────── */
 .gallery-page {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.gallery-header {
-  margin: 1rem 0 2rem;
-}
-
-.gallery-header h1 {
-  margin: 0;
+.gallery-title {
+  margin: 1rem 0 0.5rem;
   font-size: 2.5rem;
   letter-spacing: -0.02em;
 }
 
-.gallery-description p {
-  margin: 0.25rem 0 0;
-  color: #666;
+/* 연도별 묶음 */
+.gallery-year {
+  margin-top: 2.5rem;
 }
 
-/* 세로/가로 사진이 섞여도 빈칸 없이 쌓이는 3열 레이아웃 */
+.gallery-year-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--kaist-blue);
+}
+
+.gallery-year-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+/* 3열 그리드: 같은 줄 사진의 위아래가 딱 맞도록 4:5 비율로 통일 */
 .gallery-grid {
-  column-count: 3;
-  column-gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem 1.25rem;
 }
 
 .gallery-card {
-  break-inside: avoid;
-  margin: 0 0 1.5rem;
+  margin: 0;
 }
 
 .gallery-card a {
   display: block;
   overflow: hidden;
+  aspect-ratio: 4 / 5;
   border-radius: 10px;
   background: #e9e9e9;
 }
@@ -203,7 +218,9 @@ footer {
 .gallery-card img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
   transition: transform 0.4s ease;
 }
 
@@ -311,7 +328,7 @@ footer {
 /* 900px 이하 화면 */
 @media (max-width: 900px) {
   .gallery-grid {
-    column-count: 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .cv-container {
     flex-direction: column;
@@ -861,10 +878,10 @@ body.home footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 7.5rem 2rem 5rem;
-}
-
-.hero-content > * {
-  max-width: 680px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
 }
 
 .hero-eyebrow {
@@ -971,8 +988,9 @@ body.home footer {
 
 .hero-social {
   display: flex;
-  gap: 0.5rem;
-  margin-left: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 1rem 0 0 -0.85rem;
 }
 
 .hero-social a {
@@ -1007,6 +1025,10 @@ body.home footer {
   color: #00ccbb;
 }
 
+.hero-social a.orcid:hover svg {
+  color: #a6ce39;
+}
+
 .hero-credit {
   position: absolute;
   right: 1.25rem;
@@ -1017,95 +1039,94 @@ body.home footer {
   color: rgba(255, 255, 255, 0.55);
 }
 
-/* 히어로 아래: 현재 프로젝트 & 관심 분야 */
-.home-section {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+/* 오른쪽 칼럼: 현재 프로젝트 & 관심 분야 */
+.hero-side {
+  padding-left: 2.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.home-inner {
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5rem 2rem 6rem;
-}
-
-.section-eyebrow {
-  margin: 0 0 1.25rem;
-  font-size: 0.8rem;
+.side-label {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin-bottom: 4rem;
+.side-projects {
+  margin: 0 0 2.25rem;
+  padding: 0;
+  list-style: none;
 }
 
-.project-card {
-  position: relative;
-  padding: 1.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.025);
-  transition: border-color 0.25s, background-color 0.25s, transform 0.25s;
+.side-projects li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.9rem 0.75rem;
+  margin: 0 -0.75rem;
+  border-radius: 10px;
+  transition: background-color 0.25s;
 }
 
-.project-card:hover {
-  border-color: rgba(126, 169, 230, 0.45);
-  background: rgba(255, 255, 255, 0.045);
-  transform: translateY(-2px);
+.side-projects li:hover {
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.project-index {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.75rem;
+.side-num {
+  flex-shrink: 0;
+  min-width: 1.4rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.1rem;
   font-size: 0.85rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.project-tag {
-  margin: 0 0 0.6rem;
-  font-size: 0.85rem;
+.side-tag {
+  margin: 0;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--accent);
 }
 
-.project-card h3 {
-  margin: 0 0 0.6rem;
-  font-size: 1.25rem;
+.side-title {
+  margin: 0.15rem 0 0.3rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: -0.01em;
+  line-height: 1.4;
   color: #fff;
 }
 
-.project-card p:last-child {
+.side-desc {
   margin: 0;
-  font-size: 0.98rem;
-  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.62);
 }
 
 .interest-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .interest-chips li {
-  padding: 0.45rem 1rem;
-  font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 999px;
+  background: rgba(14, 18, 25, 0.35);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.interest-chips li:hover {
+  color: #fff;
+  border-color: var(--accent);
 }
 
 /* 태블릿/모바일: 사진을 배경 전체로, 위에서 아래로 어둡게 */
@@ -1120,8 +1141,16 @@ body.home footer {
     );
   }
 
-  .project-grid {
+  .hero-content {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-side {
+    padding-left: 0;
+    padding-top: 2rem;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 }
 
@@ -1142,9 +1171,6 @@ body.home footer {
     font-size: 1.12rem;
   }
 
-  .home-inner {
-    padding: 3.5rem 1rem 4rem;
-  }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1263,7 +1289,12 @@ body.home footer {
   }
 
   .gallery-grid {
-    column-count: 1;
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    max-width: none;
+    padding: 0 1rem;
   }
 
   .publication-item.grid,
