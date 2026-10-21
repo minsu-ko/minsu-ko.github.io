@@ -1,0 +1,20 @@
+<div class="cv-list">
+{%- for p in site.data.publications %}
+<div class="publication-item grid">
+  <div class="publication-info">
+    <div class="publication-title"><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a></div>
+    <div class="publication-authors">{{ p.authors | replace: 'MinSu Ko', '<span class="me">MinSu Ko</span>' }}</div>
+    <div class="publication-journal">{{ p.venue }}</div>
+    <div class="pub-links">
+      <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.link_label }} ↗</a>
+      {%- if p.doi %}
+      <a class="pub-link doi" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI {{ p.doi }}</a>
+      {%- endif %}
+    </div>
+  </div>
+  <div class="publication-meta">
+    <div class="publication-date">{{ p.date }}</div>
+  </div>
+</div>
+{%- endfor %}
+</div>

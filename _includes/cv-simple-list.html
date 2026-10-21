@@ -1,0 +1,14 @@
+{%- comment -%} Honors / Teachings 처럼 제목·기관·날짜만 있는 목록. 사용법: {% include cv-simple-list.html items=site.data.honors %} {%- endcomment -%}
+<div class="cv-list">
+{%- for h in include.items %}
+<div class="honor-item grid">
+  <div class="honor-info">
+    <div class="honor-title">{{ h.title }}</div>
+    <div class="honor-institution">{{ h.institution }}</div>
+  </div>
+  <div class="honor-meta">
+    <div class="honor-date">{{ h.date }}</div>
+  </div>
+</div>
+{%- endfor %}
+</div>

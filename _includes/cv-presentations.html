@@ -1,0 +1,21 @@
+{%- comment -%} 사용법: {% include cv-presentations.html type="oral" %} (oral | poster) {%- endcomment -%}
+{%- assign items = site.data.presentations | where: "type", include.type -%}
+<h3 class="cv-subheading">{% if include.type == "oral" %}Oral{% else %}Poster{% endif %} <span class="cv-count">{{ items | size }}</span></h3>
+<div class="cv-list">
+{%- for p in items %}
+<div class="presentation-item grid">
+  {%- if p.poster_img %}
+  {% include poster-thumb.html img=p.poster_img href=p.poster_url %}
+  {%- endif %}
+  <div class="presentation-info">
+    <div class="presentation-title">{% if p.url != "" %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}<span>{{ p.title }}</span>{% endif %}</div>
+    <div class="presentation-author">{{ p.authors | replace: 'MinSu Ko', '<span class="me">MinSu Ko</span>' }}</div>
+    <div class="presentation-conference">{{ p.venue }}</div>
+  </div>
+  <div class="presentation-meta">
+    <div class="presentation-date">{{ p.date }}</div>
+    <div class="presentation-location">{{ p.location }}</div>
+  </div>
+</div>
+{%- endfor %}
+</div>

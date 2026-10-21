@@ -1,0 +1,42 @@
+# ──────────────────────────────────────────────────────
+# CV > Publications 목록 (위쪽일수록 최신). cv.md 에서 자동으로 표시됩니다.
+# title, url(제목 링크), link_label(버튼 이름), doi(선택), authors, venue, date
+# authors 안의 "MinSu Ko" 는 자동으로 굵게 표시됩니다.
+# ──────────────────────────────────────────────────────
+
+- title: "Multi-JPA configuration to broaden amplification bandwidth for axion haloscope experiments"
+  url: "https://iopscience.iop.org/article/10.1088/1361-6668/ae3a1d/meta"
+  link_label: "IOPscience"
+  doi: "10.1088/1361-6668/ae3a1d"
+  authors: "Boris I. Ivanov et al."
+  venue: "Superconductor Science and Technology"
+  date: "Feb, 2026"
+
+- title: "Approaching the Quantum Limit in Axion Detection at IBS-CAPP and IBS-DMAG"
+  url: "https://www.mdpi.com/2673-9984/11/1/5"
+  link_label: "MDPI"
+  authors: "Sergey V. Uchaikin et al."
+  venue: "MDPI Physical Sciences Forum"
+  date: "Nov, 2025"
+
+- title: "Josephson parametric amplifier based quantum noise limited amplifier development for axion search experiments in CAPP"
+  url: "https://doi.org/10.3389/fphy.2024.1437680"
+  link_label: "Frontiers"
+  doi: "10.3389/fphy.2024.1437680"
+  authors: "Sergey V. Uchaikin et al."
+  venue: "Frontiers in Physics"
+  date: "Jul, 2024"
+
+- title: "Wideband Amplification for IBS-CAPP's Axion Search Experiments"
+  url: "https://www.researchsquare.com/article/rs-3550142/v1"
+  link_label: "Research Square"
+  authors: "Jinmyeong Kim, MinSu Ko et al."
+  venue: "Preprint"
+  date: "Jul, 2024"
+
+- title: "Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit"
+  url: "https://ieeexplore.ieee.org/abstract/document/10225136"
+  link_label: "IEEE Xplore"
+  authors: "MinSu Ko et al."
+  venue: "2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)"
+  date: "Aug, 2023"

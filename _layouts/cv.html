@@ -1,47 +1,53 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <!-- 반드시 올바른 경로로 style.css를 불러와야 합니다 -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
-</head>
-<body>
-  <!-- 상단 공통 네비게이션 -->
-  <header>
-    {% include nav.html %}
-  </header>
+---
+layout: default
+---
+<div class="cv-container">
+  <!-- 왼쪽 사이드바 (모바일에서는 가로 스크롤 메뉴) -->
+  <aside class="sidebar">
+    <nav class="cv-toc" aria-label="CV sections">
+      <ul>
+        <li><a href="#basics">Basics</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#employment">Employment</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#presentations">Presentations</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#teachings">Teachings</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-  <div class="cv-container">
-    <!-- 왼쪽 사이드바 -->
-    <aside class="sidebar">
-      <nav>
-        <ul>
-          <li><a href="#basics">Basics</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#employment">Employment</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#presentations">Presentations</a></li>
-          <li><a href="#honors">Honors</a></li>
-          <li><a href="#teachings">Teachings</a></li>
-        </ul>
-      </nav>
-    </aside>
+  <!-- 오른쪽 메인 콘텐츠 -->
+  <section class="cv-content">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </section>
+</div>
 
-    <!-- 오른쪽 메인 콘텐츠 -->
-    <section class="cv-content">
-      <h1>{{ page.title }}</h1>
-      {{ content }}
-    </section>
-  </div>
-
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<script>
+  // 스크롤 위치에 따라 사이드바에서 현재 섹션을 강조
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.cv-toc a'));
+    var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+    function update() {
+      var current = sections[0];
+      sections.forEach(function (sec) {
+        if (sec.getBoundingClientRect().top <= 140) current = sec;
+      });
+      // 페이지 맨 아래에 닿으면 마지막 섹션 강조
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = sections[sections.length - 1];
+      links.forEach(function (a) {
+        var on = a.getAttribute('href') === '#' + current.id;
+        a.classList.toggle('active', on);
+        if (on && window.matchMedia('(max-width: 900px)').matches) {
+          // 모바일 가로 메뉴: 현재 항목이 가운데 오도록 (세로 스크롤은 건드리지 않음)
+          var ul = a.closest('ul');
+          ul.scrollLeft = a.offsetLeft - ul.clientWidth / 2 + a.offsetWidth / 2;
+        }
+      });
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
