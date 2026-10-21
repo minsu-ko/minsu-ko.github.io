@@ -2,7 +2,8 @@
    1) 기본 전체 스타일
 ──────────────────────────────────────────────────────────── */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Malgun Gothic", "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -214,17 +215,6 @@ footer {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   8) About 페이지 우측 사진 스타일
-──────────────────────────────────────────────────────────── */
-.about-photo {
-  float: right;
-  width: 200px;        /* 원하는 크기로 조정 가능 */
-  height: auto;
-  margin: 0 0 1rem 1rem; /* 우측 정렬 후 좌측에 여백 추가 */
-  border-radius: 8px;  /* 둥근 모서리(옵션) */
-}
-
-/* ─────────────────────────────────────────────────────────────
    9) 반응형(옵션)
 ──────────────────────────────────────────────────────────── */
 /* 900px 이하 화면 */
@@ -243,76 +233,8 @@ footer {
     margin-bottom: 1.5rem;
     top: auto;
   }
-  .about-photo {
-    float: none;
-    display: block;
-    margin: 1rem auto 2rem; /* 중앙 정렬로 변경 */
-    width: 50%;             /* 화면 폭의 50% 사용 */
-  }
 }
 
-/* 600px 이하 화면 */
-@media (max-width: 600px) {
-  .about-photo {
-    width: 80%; /* 화면 폭의 80% 사용 */
-  }
-}
-/* ─────────────────────────────────────────────────────────────
-   About 페이지 전용 레이아웃 (두 칸 정렬)
-──────────────────────────────────────────────────────────── */
-.about-container {
-  display: flex;
-  flex-wrap: nowrap;       /* 무조건 한 줄에 두 칸 */
-  margin-top: 5rem;        /* 헤더(약 60px) + 여유(≈20px) */
-  padding: 0 2rem;         /* 좌우 여백 */
-  max-width: 90%;          /* 화면 폭의 90% 폭으로 조정 */
-  margin-left: auto;
-  margin-right: auto;
-  /* 배경/테두리/그림자 없음 */
-}
-
-.about-text {
-  flex: 1;                 /* 왼쪽 칸이 남은 가로폭을 모두 차지 */
-  /* 필요 시 왼쪽 텍스트에 여백, 폰트 조정 등을 추가 가능 */
-}
-
-.about-image {
-  flex-shrink: 0;          /* 오른쪽 칸은 축소되지 않음 */
-  width: 250px;            /* 원하는 사진 영역 너비 (px 단위) */
-  margin-left: 2rem;       /* 왼쪽 텍스트와 간격 */
-  display: flex;
-  justify-content: center; /* 사진을 가로 중앙에 배치 */
-  align-items: flex-start; /* 사진 자체는 상단 정렬 */
-}
-
-.about-image img {
-  width: 100%;             /* 부모 너비(250px)에 맞춰 늘려서 표시 */
-  height: auto;
-  border-radius: 8px;      /* 사진 모서리를 둥글게 (옵션) */
-  /* 필요 시 테두리, 그림자 등을 제거/추가 가능 */
-}
-
-/* ─────────────────────────────────────────────────────────────
-   반응형: 화면이 좁아질 때 처리
-──────────────────────────────────────────────────────────── */
-@media (max-width: 900px) {
-  .about-container {
-    flex-direction: column;   /* 세로로 쌓아 올림 */
-    margin-top: 5rem;
-  }
-  .about-image {
-    width: 50%;               /* 화면 폭의 50% */
-    margin-left: 0;
-    margin-bottom: 1.5rem;    /* 텍스트와 아래쪽 간격 */
-    align-self: center;       /* 부모 컨테이너 안에서 중앙 정렬 */
-  }
-}
-
-@media (max-width: 600px) {
-  .about-image {
-    width: 80%;               /* 화면 폭의 80% */
-  }
-}
 /* ─────────────────────────────────────────────────────────────
    네비게이션 바의 소셜 아이콘 스타일
 ──────────────────────────────────────────────────────────── */
@@ -393,33 +315,6 @@ nav ul li.social-icon a:hover img {
   font-size: 0.9rem;
 }
 
-/* About 페이지: 텍스트와 이미지 2단 레이아웃 */
-.about-container {
-  display: flex;
-  align-items: flex-start;   /* 텍스트와 이미지 상단 정렬 */
-  gap: 2rem;                  /* 칸 사이 여백 */
-  margin: 2rem 0;
-}
-
-.about-text {
-  flex: 1;                    /* 텍스트 영역이 남는 공간을 차지 */
-  line-height: 1.6;           /* 가독성 위한 행간 */
-}
-
-.about-text h1,
-.about-text h2 {
-  margin-top: 0;              /* 헤딩 위 여백 제거 */
-}
-
-.about-image {
-  flex: 0 0 300px;            /* 너비 고정 (사진 가로 크기) */
-}
-
-.about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
 /* Education 섹션 */
 .education-item {
   margin-bottom: 1.5rem;
@@ -628,17 +523,76 @@ nav ul li.social-icon a:hover img {
 }
 
 /* 제목 */
-.publication-title a {
+.publication-title {
   font-weight: bold;
   font-size: 1.05rem;
   line-height: 1.4;
-  color: inherit;
-  text-decoration: none;
-  transition: opacity 0.2s, transform 0.2s;
+}
+.publication-title a {
+  color: rgb(0, 65, 135);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 65, 135, 0.25);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s, color 0.2s;
 }
 .publication-title a:hover {
-  opacity: 0.7;
-  transform: translateX(2px);
+  color: rgb(0, 45, 100);
+  text-decoration-color: rgb(0, 65, 135);
+}
+.publication-title a::after {
+  content: " ↗";
+  font-size: 0.85em;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 0.15em;
+}
+
+/* 저자 목록에서 본인 이름 강조 */
+.me {
+  font-weight: 700;
+  color: #111;
+}
+
+/* 논문 링크 버튼 (Journal / DOI) */
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: rgb(0, 65, 135);
+  background: rgba(0, 65, 135, 0.07);
+  border: 1px solid rgba(0, 65, 135, 0.25);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.pub-link:hover {
+  color: #fff;
+  background: rgb(0, 65, 135);
+  border-color: rgb(0, 65, 135);
+}
+.pub-link.doi {
+  color: #555;
+  background: #fff;
+  border-color: #ccc;
+  font-weight: 500;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.pub-link.doi:hover {
+  color: #fff;
+  background: #444;
+  border-color: #444;
 }
 
 /* 저자와 저널 */
@@ -685,13 +639,24 @@ nav ul li.social-icon a:hover img {
 }
 
 .presentation-title a {
-  color: inherit;
-  text-decoration: none;
-  transition: opacity .2s;
+  color: rgb(0, 65, 135);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 65, 135, 0.25);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s, color 0.2s;
 }
 
 .presentation-title a:hover {
-  opacity: 0.7;
+  color: rgb(0, 45, 100);
+  text-decoration-color: rgb(0, 65, 135);
+}
+
+.presentation-title a::after {
+  content: " ↗";
+  font-size: 0.85em;
+  display: inline-block;
+  margin-left: 0.15em;
 }
 
 .presentation-meta {
@@ -761,3 +726,272 @@ nav ul li.social-icon a:hover img {
 
 
 
+
+/* ─────────────────────────────────────────────────────────────
+   About(메인) 페이지: 전체 폭 히어로 사진 + 상단 검은 그라데이션
+──────────────────────────────────────────────────────────── */
+body.home {
+  background-color: #05070d;
+}
+
+body.home header {
+  background: transparent;
+}
+
+body.home main {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.home footer {
+  margin-top: 0;
+  background-color: #05070d;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #05070d var(--hero-image) center 70% / cover no-repeat;
+}
+
+/* 위쪽은 검게, 아래로 갈수록 사진이 드러나도록 */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.78) 30%,
+    rgba(0, 0, 0, 0.4) 58%,
+    rgba(0, 0, 0, 0) 80%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 7.5rem 2rem 5rem;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.hero-content h1 {
+  margin: 0.3rem 0 1rem;
+  font-size: clamp(2.6rem, 7vw, 4.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.hero-content p,
+.hero-content li {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.hero-content strong {
+  color: #fff;
+}
+
+/* 소속 첫 줄은 두 줄로 나눠 보이게 */
+.hero-content h1 + p strong {
+  display: block;
+  font-size: 1.15rem;
+}
+
+.hero-content h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* 관심 분야는 칩(pill) 형태로 */
+.hero-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-content ul li {
+  padding: 0.3rem 0.85rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-shadow: none;
+}
+
+.hero-content ol {
+  max-width: 680px;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.hero-content ol li {
+  margin-bottom: 0.4rem;
+}
+
+.hero-credit {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 0.75rem;
+  z-index: 1;
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Presentations: 포스터 미리보기 썸네일 (클릭 → PDF)
+──────────────────────────────────────────────────────────── */
+.presentation-item.grid:has(> .poster-thumb) {
+  grid-template-columns: 96px 1fr auto;
+}
+
+.poster-thumb {
+  position: relative;
+  display: block;
+  width: 96px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.poster-thumb:hover,
+.poster-thumb:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.poster-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 썸네일 이미지가 없을 때 표시되는 기본 카드 */
+.poster-thumb-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1.414;
+  font-weight: 800;
+  color: #cc5500;
+  background: rgba(204, 85, 0, 0.08);
+}
+
+.poster-thumb-badge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.15rem 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: rgba(204, 85, 0, 0.92);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.poster-thumb:hover .poster-thumb-badge,
+.poster-thumb:focus-visible .poster-thumb-badge {
+  opacity: 1;
+}
+
+/* 터치 기기에서는 호버가 없으므로 항상 표시 */
+@media (hover: none) {
+  .poster-thumb-badge {
+    opacity: 1;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   좁은 화면: CV 항목을 한 줄로 쌓기
+──────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 6rem 1rem 4rem;
+  }
+
+  /* 모바일은 글이 길게 내려오므로 그라데이션을 더 아래까지 */
+  .hero::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.8) 45%,
+      rgba(0, 0, 0, 0.45) 72%,
+      rgba(0, 0, 0, 0) 92%
+    );
+  }
+
+  .cv-container {
+    max-width: none;
+    padding: 0 1rem;
+  }
+
+  .publication-item.grid,
+  .presentation-item.grid,
+  .employment-item.grid,
+  .honor-item.grid {
+    grid-template-columns: 1fr;
+    row-gap: 0.35rem;
+  }
+
+  .publication-meta,
+  .presentation-meta,
+  .employment-meta,
+  .honor-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .presentation-item.grid:has(> .poster-thumb) {
+    grid-template-columns: 72px 1fr;
+    column-gap: 1rem;
+  }
+
+  .presentation-item.grid:has(> .poster-thumb) .presentation-meta {
+    grid-column: 2;
+  }
+
+  .poster-thumb {
+    width: 72px;
+  }
+}

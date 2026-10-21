@@ -1,16 +1,17 @@
 ---
 layout: default
 title: ""
+body_class: home
 ---
-<div class="about-container">
+<section class="hero" style="--hero-image: url('{{ '/assets/gallery/2025_ovro_milkyway_re.jpg' | relative_url }}');">
 
-<div class="about-text" markdown="1">
+<div class="hero-content" markdown="1">
+
+<p class="hero-eyebrow">Experimental Physics · KAIST</p>
 
 # MinSu Ko
 
 **Master–Doctoral Integrated Program (2nd year), Physics** Korea Advanced Institute of Science and Technology (KAIST)
-
----
 
 I'm an experimental physicist interested in:
 
@@ -19,9 +20,7 @@ I'm an experimental physicist interested in:
 - Instruments in radio astronomy
 - Superconducting devices (quantum noise limited amplifiers)
 
-My main research focus is **instrumentation for observational cosmology and particle physics**. 
-
----
+My main research focus is **instrumentation for observational cosmology and particle physics**.
 
 ## Current Projects
 1. 12–20 GHz receiver development for carbon monoxide line-intensity mapping Targeting z > 4.8 in COMAP-EoR project.
@@ -29,6 +28,6 @@ My main research focus is **instrumentation for observational cosmology and part
 
 </div>
 
-<div class="about-image"> <img src="{{ '/assets/gallery/2025_ovro_milkyway_re.jpg' | relative_url }}" alt="My Photo" /> </div>
+<p class="hero-credit">Owens Valley Radio Observatory, 2025</p>
 
-</div>
+</section>

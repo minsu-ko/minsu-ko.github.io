@@ -153,15 +153,17 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 저널 -->
   <div class="publication-info">
     <div class="publication-title">
-      <a href="https://iopscience.iop.org/article/10.1088/1361-6668/ae3a1d/meta" target="_blank" rel="noopener">
-        Multi-JPA configuration to broaden amplification bandwidth for axion haloscope experiments
-      </a>
+      <a href="https://iopscience.iop.org/article/10.1088/1361-6668/ae3a1d/meta" target="_blank" rel="noopener">Multi-JPA configuration to broaden amplification bandwidth for axion haloscope experiments</a>
     </div>
     <div class="publication-authors">
       Boris I. Ivanov et al.
     </div>
     <div class="publication-journal">
       Superconductor Science and Technology
+    </div>
+    <div class="pub-links">
+      <a class="pub-link" href="https://iopscience.iop.org/article/10.1088/1361-6668/ae3a1d/meta" target="_blank" rel="noopener">IOPscience ↗</a>
+      <a class="pub-link doi" href="https://doi.org/10.1088/1361-6668/ae3a1d" target="_blank" rel="noopener">DOI 10.1088/1361-6668/ae3a1d</a>
     </div>
   </div>
 
@@ -177,15 +179,16 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 저널 -->
   <div class="publication-info">
     <div class="publication-title">
-      <a href="https://www.mdpi.com/2673-9984/11/1/5" target="_blank" rel="noopener">
-        Approaching the Quantum Limit in Axion Detection at IBS-CAPP and IBS-DMAG
-      </a>
+      <a href="https://www.mdpi.com/2673-9984/11/1/5" target="_blank" rel="noopener">Approaching the Quantum Limit in Axion Detection at IBS-CAPP and IBS-DMAG</a>
     </div>
     <div class="publication-authors">
       Sergey V. Uchaikin et al.
     </div>
     <div class="publication-journal">
       MDPI Physical Sciences Forum
+    </div>
+    <div class="pub-links">
+      <a class="pub-link" href="https://www.mdpi.com/2673-9984/11/1/5" target="_blank" rel="noopener">MDPI ↗</a>
     </div>
   </div>
 
@@ -201,9 +204,7 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 저널 -->
   <div class="publication-info">
     <div class="publication-title">
-      <a href="https://doi.org/10.3389/fphy.2024.1437680" target="_blank" rel="noopener">
-        Josephson parametric amplifier based quantum noise limited amplifier development for axion search experiments in CAPP
-      </a>
+      <a href="https://doi.org/10.3389/fphy.2024.1437680" target="_blank" rel="noopener">Josephson parametric amplifier based quantum noise limited amplifier development for axion search experiments in CAPP</a>
     </div>
     <div class="publication-authors">
       Sergey V. Uchaikin et al.
@@ -211,6 +212,10 @@ title: CV
     <div class="publication-journal">
       Frontiers in Physics
     </div>
+    <div class="pub-links">
+      <a class="pub-link" href="https://doi.org/10.3389/fphy.2024.1437680" target="_blank" rel="noopener">Frontiers ↗</a>
+      <a class="pub-link doi" href="https://doi.org/10.3389/fphy.2024.1437680" target="_blank" rel="noopener">DOI 10.3389/fphy.2024.1437680</a>
+    </div>
   </div>
 
   <!-- 오른쪽 칸: 날짜, (선택) 위치 -->
@@ -225,16 +230,17 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 저널 -->
   <div class="publication-info">
     <div class="publication-title">
-      <a href="https://www.researchsquare.com/article/rs-3550142/v1" target="_blank" rel="noopener">
-        Wideband Amplification for IBS-CAPP's Axion Search Experiments
-      </a>
+      <a href="https://www.researchsquare.com/article/rs-3550142/v1" target="_blank" rel="noopener">Wideband Amplification for IBS-CAPP's Axion Search Experiments</a>
     </div>
     <div class="publication-authors">
-      Jinmyeong Kim, MinSu Ko et al.
+      Jinmyeong Kim, <span class="me">MinSu Ko</span> et al.
     </div>
     <div class="publication-journal">
       Preprint
     </div>
+    <div class="pub-links">
+      <a class="pub-link" href="https://www.researchsquare.com/article/rs-3550142/v1" target="_blank" rel="noopener">Research Square ↗</a>
+    </div>
   </div>
 
   <!-- 오른쪽 칸: 날짜, (선택) 위치 -->
@@ -249,15 +255,16 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 저널 -->
   <div class="publication-info">
     <div class="publication-title">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">
-        Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit
-      </a>
+      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit</a>
     </div>
     <div class="publication-authors">
-      MinSu Ko et al.
+      <span class="me">MinSu Ko</span> et al.
     </div>
     <div class="publication-journal">
       2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)
+    </div>
+    <div class="pub-links">
+      <a class="pub-link" href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">IEEE Xplore ↗</a>
     </div>
   </div>
 
@@ -277,11 +284,9 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="">
-        Prototype Receiver Development for COMAP-EoR: Toward CO Line-Intensity Mapping at z=4.8–8.5
-      </a>
+      <span>Prototype Receiver Development for COMAP-EoR: Toward CO Line-Intensity Mapping at z=4.8–8.5</span>
     </div>
-    <div class="presentation-author">MinSu Ko, Junhan kim et al.</div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span>, Junhan kim et al.</div>
     <div class="presentation-conference">
       The Korean Physical Society 2026 Spring Meeting
     </div>
@@ -298,11 +303,9 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="https://www.researchgate.net/publication/397884171_Optimized_Frontend_Components_of_the_Prototype_Ku-band_receiver_for_the_COMAP-EoR_Experiment" target="_blank" rel="noopener">
-        Optimized Frontend Components of the Prototype Ku-band Receiver for the COMAP-EoR Experiment
-      </a>
+      <a href="https://www.researchgate.net/publication/397884171_Optimized_Frontend_Components_of_the_Prototype_Ku-band_receiver_for_the_COMAP-EoR_Experiment" target="_blank" rel="noopener">Optimized Frontend Components of the Prototype Ku-band Receiver for the COMAP-EoR Experiment</a>
     </div>
-    <div class="presentation-author">MinSu Ko, Wooseok Kang et al.</div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span>, Wooseok Kang et al.</div>
     <div class="presentation-conference">
       2025 East Asia Submillimeter-wave Receiver Workshop
     </div>
@@ -316,14 +319,13 @@ title: CV
 </div>
 
 <div class="presentation-item grid">
+  {% include poster-thumb.html pdf="/assets/posters/2025-kas-fall-comap-frontend.pdf" %}
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="https://www.researchgate.net/publication/397884382_Optimized_Frontend_Components_of_the_Prototype_Ku-band_Receiver_for_the_COMAP-EoR_Experiment" target="_blank" rel="noopener">
-        Optimized Frontend Components of the Prototype Ku-band Receiver for the COMAP-EoR Experiment
-      </a>
+      <a href="https://www.researchgate.net/publication/397884382_Optimized_Frontend_Components_of_the_Prototype_Ku-band_Receiver_for_the_COMAP-EoR_Experiment" target="_blank" rel="noopener">Optimized Frontend Components of the Prototype Ku-band Receiver for the COMAP-EoR Experiment</a>
     </div>
-    <div class="presentation-author">MinSu Ko, Wooseok Kang et al.</div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span>, Wooseok Kang et al.</div>
     <div class="presentation-conference">
       2025 Korean Astronomical Society Fall Meeting
     </div>
@@ -337,14 +339,33 @@ title: CV
 </div>
 
 <div class="presentation-item grid">
+  {% include poster-thumb.html pdf="/assets/posters/2025-kas-spring-comap-status.pdf" %}
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="" target="_blank" rel="noopener">
-        Development Status of a Prototype Ku-band Receiver for the COMAP-EoR Experiment
-      </a>
+      <span>Development Status of a Prototype Ku-band Receiver for the COMAP-EoR Experiment</span>
     </div>
-    <div class="presentation-author">Wooseok Kang, MinSu Ko et al.</div>
+    <div class="presentation-author">Wooseok Kang, <span class="me">MinSu Ko</span> et al.</div>
+    <div class="presentation-conference">
+      2025 Korean Astronomical Society Spring Meeting
+    </div>
+  </div>
+  <!-- 오른쪽 칸: 날짜, 도시 -->
+  <div class="presentation-meta">
+    <span class="presentation-tag poster">Poster</span>
+    <div class="presentation-date">Apr, 2025</div>
+    <div class="presentation-location">📍 Gyeongju, South Korea</div>
+  </div>
+</div>
+
+<div class="presentation-item grid">
+  {% include poster-thumb.html pdf="/assets/posters/2025-kas-spring-lumped-jpa.pdf" %}
+  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
+  <div class="presentation-info">
+    <div class="presentation-title">
+      <a href="https://www.researchgate.net/publication/392017881_Lumped-element_Josephson_Parametric_Amplifier_For_Wideband_Axion_Haloscope_Readout_of_DMAG?_sg%5B0%5D=4r27y4lKkBfO1-BzC9oFmVeT0VvSZFmLxL_Qq6l1t6hJUEQ7PytDMaWOTHgpwiMDTB6ccGlaF2Sf66v2VA4b1NLIFLN37TEVWCFa3jpv.Lu0Q2wmuZW9fiXck2Yv2idtV7JllDP9WXHOJzfalXwqXH6WGzcz69AmbRhH0KQGq_oV0V-OBFZ36VnqRS8d_1A&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQifX0" target="_blank" rel="noopener">Lumped-element Josephson Parametric Amplifier For Wideband Axion Haloscope Readout of DMAG</a>
+    </div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
     <div class="presentation-conference">
       2025 Korean Astronomical Society Spring Meeting
     </div>
@@ -361,32 +382,9 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="https://www.researchgate.net/publication/392017881_Lumped-element_Josephson_Parametric_Amplifier_For_Wideband_Axion_Haloscope_Readout_of_DMAG?_sg%5B0%5D=4r27y4lKkBfO1-BzC9oFmVeT0VvSZFmLxL_Qq6l1t6hJUEQ7PytDMaWOTHgpwiMDTB6ccGlaF2Sf66v2VA4b1NLIFLN37TEVWCFa3jpv.Lu0Q2wmuZW9fiXck2Yv2idtV7JllDP9WXHOJzfalXwqXH6WGzcz69AmbRhH0KQGq_oV0V-OBFZ36VnqRS8d_1A&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQifX0" target="_blank" rel="noopener">
-        Lumped-element Josephson Parametric Amplifier For Wideband Axion Haloscope Readout of DMAG
-      </a>
+      <span>Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP</span>
     </div>
-    <div class="presentation-author">MinSu Ko et al.</div>
-    <div class="presentation-conference">
-      2025 Korean Astronomical Society Spring Meeting
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag poster">Poster</span>
-    <div class="presentation-date">Apr, 2025</div>
-    <div class="presentation-location">📍 Gyeongju, South Korea</div>
-  </div>
-</div>
-
-<div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <a href="" target="_blank" rel="noopener">
-        Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP
-      </a>
-    </div>
-    <div class="presentation-author">MinSu Ko et al.</div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
     <div class="presentation-conference">
       KAIST Undergrad. Research Program Workshop
     </div>
@@ -403,11 +401,9 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="https://www.researchgate.net/publication/380104141_Characterization_of_Parallel-Connected_Josephson_Parametric_Amplifiers_for_Axion_Search_Experiments" target="_blank" rel="noopener">
-        Characterization of Parallel-Connected Josephson Parametric Amplifiers for Axion Search Experiments
-      </a>
+      <a href="https://www.researchgate.net/publication/380104141_Characterization_of_Parallel-Connected_Josephson_Parametric_Amplifiers_for_Axion_Search_Experiments" target="_blank" rel="noopener">Characterization of Parallel-Connected Josephson Parametric Amplifiers for Axion Search Experiments</a>
     </div>
-    <div class="presentation-author">MinSu Ko et al.</div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
     <div class="presentation-conference">
       The Korean Physical Society 2024 Spring Meeting
     </div>
@@ -421,14 +417,13 @@ title: CV
 </div>
 
 <div class="presentation-item grid">
+  {% include poster-thumb.html pdf="/assets/posters/2023-ltd20-jpa-frequency-range.pdf" %}
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">
-        Methods for Extending the Scanning Frequency Range of Flux-Driven Josephson Parametric Amplifiers Designed for Axion Search Experiments
-      </a>
+      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">Methods for Extending the Scanning Frequency Range of Flux-Driven Josephson Parametric Amplifiers Designed for Axion Search Experiments</a>
     </div>
-    <div class="presentation-author">Jinmeyong Kim, MinSu Ko et al.</div>
+    <div class="presentation-author">Jinmeyong Kim, <span class="me">MinSu Ko</span> et al.</div>
     <div class="presentation-conference">
       The 20th International Conference on Low Temperature Detectors (LTD 20)
     </div>
@@ -445,11 +440,9 @@ title: CV
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
     <div class="presentation-title">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">
-        Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit
-      </a>
+      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit</a>
     </div>
-    <div class="presentation-author">MinSu Ko et al.</div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
     <div class="presentation-conference">
       2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)
     </div>
