@@ -4,7 +4,9 @@
 /* 공통 색상 */
 :root {
   --ink: #0e1219;
-  --accent: #e0b36a;
+  --kaist-blue: #004191;          /* KAIST Blue (RGB 0, 65, 145) */
+  --kaist-blue-dark: #00316e;
+  --accent: #7ea9e6;              /* 어두운 배경 위 글씨용 KAIST Blue 밝은 톤 */
 }
 
 body {
@@ -158,41 +160,72 @@ footer {
 
 /* ─────────────────────────────────────────────────────────────
    6) Gallery 전용 스타일
-   - 한 줄에 2개 사진 배치
-   - 콘텐츠 폭 넓히고, 흰 배경 박스 제거
+   - 3열 메이슨리(태블릿 2열, 모바일 1열), 날짜/설명 분리
 ──────────────────────────────────────────────────────────── */
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 한 줄에 사진 2개 */
-  gap: 1rem;
-  margin-top: 5rem;      /* 헤더 아래 여유 공간 */
-  padding: 0 2rem;       /* 좌우 여백 */
-  max-width: 90%;        /* 화면 폭의 90% 사용 */
-  margin-left: auto;
-  margin-right: auto;
-  /* 배경색, 그림자, 테두리 없음(기본) */
+.gallery-page {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.gallery-item {
-  background-color: transparent; /* 흰 배경 제거 */
-  border: none;                   /* 테두리 제거 */
-  padding: 0.5rem 0;              /* 사진 위아래 약간 여백 */
-  text-align: center;
+.gallery-header {
+  margin: 1rem 0 2rem;
 }
 
-.gallery-item img {
-  width: 100%;     /* 사진이 칸 너비에 꽉 차도록 */
-  max-width: 800px;/* 필요 시 개별 이미지 최대 너비 지정(옵션) */
+.gallery-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.gallery-description p {
+  margin: 0.25rem 0 0;
+  color: #666;
+}
+
+/* 세로/가로 사진이 섞여도 빈칸 없이 쌓이는 3열 레이아웃 */
+.gallery-grid {
+  column-count: 3;
+  column-gap: 1.25rem;
+}
+
+.gallery-card {
+  break-inside: avoid;
+  margin: 0 0 1.5rem;
+}
+
+.gallery-card a {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e9e9e9;
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
   height: auto;
-  border-radius: 4px;
-  /* 테두리, 그림자 제거 */
-  border: none;
+  transition: transform 0.4s ease;
 }
 
-.gallery-item figcaption {
-  margin-top: 0.5rem;
+.gallery-card a:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-card figcaption {
+  margin-top: 0.6rem;
   font-size: 0.9rem;
-  color: #555;
+  line-height: 1.5;
+  color: #444;
+}
+
+.gallery-date {
+  display: block;
+  margin-bottom: 0.1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--kaist-blue);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -237,7 +270,7 @@ footer {
 }
 
 .sidebar nav ul li a:hover {
-  color: rgb(0, 65, 135) !important; /* 보라색 강조 */
+  color: var(--kaist-blue) !important;
 }
 
 .cv-content {
@@ -249,7 +282,7 @@ footer {
   margin-top: 0;
   font-size: 2.5rem;
   color: #333;
-  border-bottom: 2px solid rgb(0, 65, 135);
+  border-bottom: 2px solid var(--kaist-blue);
   padding-bottom: 0.5rem;
 }
 
@@ -257,7 +290,7 @@ footer {
   scroll-margin-top: 90px;  /* 고정 헤더에 가려지지 않도록 */
   margin-top: 2rem;
   font-size: 1.75rem;
-  color: rgb(0, 65, 135);
+  color: var(--kaist-blue);
 }
 
 .cv-content ul,
@@ -277,8 +310,8 @@ footer {
 ──────────────────────────────────────────────────────────── */
 /* 900px 이하 화면 */
 @media (max-width: 900px) {
-  .gallery-container {
-    grid-template-columns: 1fr; /* 한 줄에 사진 1개로 변경 */
+  .gallery-grid {
+    column-count: 2;
   }
   .cv-container {
     flex-direction: column;
@@ -549,16 +582,16 @@ footer {
   line-height: 1.4;
 }
 .publication-title a {
-  color: rgb(0, 65, 135);
+  color: var(--kaist-blue);
   text-decoration: underline;
-  text-decoration-color: rgba(0, 65, 135, 0.25);
+  text-decoration-color: rgba(0, 65, 145, 0.25);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s, color 0.2s;
 }
 .publication-title a:hover {
-  color: rgb(0, 45, 100);
-  text-decoration-color: rgb(0, 65, 135);
+  color: var(--kaist-blue-dark);
+  text-decoration-color: var(--kaist-blue);
 }
 .publication-title a::after {
   content: " ↗";
@@ -590,17 +623,17 @@ footer {
   font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.6;
-  color: rgb(0, 65, 135);
-  background: rgba(0, 65, 135, 0.07);
-  border: 1px solid rgba(0, 65, 135, 0.25);
+  color: var(--kaist-blue);
+  background: rgba(0, 65, 145, 0.07);
+  border: 1px solid rgba(0, 65, 145, 0.25);
   border-radius: 999px;
   text-decoration: none;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 .pub-link:hover {
   color: #fff;
-  background: rgb(0, 65, 135);
-  border-color: rgb(0, 65, 135);
+  background: var(--kaist-blue);
+  border-color: var(--kaist-blue);
 }
 .pub-link.doi {
   color: #555;
@@ -659,17 +692,17 @@ footer {
 }
 
 .presentation-title a {
-  color: rgb(0, 65, 135);
+  color: var(--kaist-blue);
   text-decoration: underline;
-  text-decoration-color: rgba(0, 65, 135, 0.25);
+  text-decoration-color: rgba(0, 65, 145, 0.25);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s, color 0.2s;
 }
 
 .presentation-title a:hover {
-  color: rgb(0, 45, 100);
-  text-decoration-color: rgb(0, 65, 135);
+  color: var(--kaist-blue-dark);
+  text-decoration-color: var(--kaist-blue);
 }
 
 .presentation-title a::after {
@@ -789,7 +822,7 @@ body.home footer {
 .hero {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   min-height: 100svh;
   overflow: hidden;
@@ -801,18 +834,23 @@ body.home footer {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 56%;
-  background: var(--hero-image) center 62% / cover no-repeat;
+  left: 0;
+  background: var(--hero-image) center 64% / cover no-repeat;
 }
 
-/* 사진 왼쪽 가장자리를 배경색으로 자연스럽게 녹임 */
+/* 위쪽은 검게, 아래로 갈수록 사진이 드러나도록 (텍스트는 위쪽 검은 영역에) */
 .hero-photo::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(to right, var(--ink) 0%, rgba(14, 18, 25, 0.75) 18%, rgba(14, 18, 25, 0) 55%),
-    linear-gradient(to bottom, rgba(14, 18, 25, 0.55) 0%, rgba(14, 18, 25, 0) 22%);
+  background: linear-gradient(
+    to bottom,
+    var(--ink) 0%,
+    rgba(14, 18, 25, 0.94) 38%,
+    rgba(14, 18, 25, 0.78) 56%,
+    rgba(14, 18, 25, 0.3) 74%,
+    rgba(14, 18, 25, 0) 90%
+  );
 }
 
 .hero-content {
@@ -822,11 +860,11 @@ body.home footer {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 7rem 2rem 5rem;
+  padding: 7.5rem 2rem 5rem;
 }
 
 .hero-content > * {
-  max-width: 560px;
+  max-width: 680px;
 }
 
 .hero-eyebrow {
@@ -850,14 +888,14 @@ body.home footer {
 }
 
 .hero-korean {
-  margin: 0.6rem 0 2rem;
+  margin: 0.5rem 0 1.5rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
 }
 
 .hero-lead {
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.25rem;
   font-size: 1.3rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.88);
@@ -867,7 +905,7 @@ body.home footer {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.5rem;
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.78);
 }
@@ -884,8 +922,8 @@ body.home footer {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.75rem;
-  margin-bottom: 2rem;
 }
 
 .btn {
@@ -910,13 +948,14 @@ body.home footer {
 }
 
 .btn-solid {
-  color: var(--ink);
-  background: #f1ece4;
-  border: 1px solid #f1ece4;
+  color: #fff;
+  background: var(--kaist-blue);
+  border: 1px solid var(--kaist-blue);
 }
 
 .btn-solid:hover {
-  background: #fff;
+  background: #0a55b8;
+  border-color: #0a55b8;
 }
 
 .btn-ghost {
@@ -932,23 +971,40 @@ body.home footer {
 
 .hero-social {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-.hero-social img {
-  display: block;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  filter: grayscale(1) brightness(1.5);
-  opacity: 0.75;
-  transition: filter 0.25s, opacity 0.25s, transform 0.25s;
+.hero-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
 }
 
-.hero-social a:hover img {
-  filter: none;
-  opacity: 1;
-  transform: translateY(-1px);
+.hero-social svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.hero-social a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-social a.scholar:hover svg {
+  color: #4f8ff7;
+}
+
+.hero-social a.researchgate:hover svg {
+  color: #00ccbb;
 }
 
 .hero-credit {
@@ -999,7 +1055,7 @@ body.home footer {
 }
 
 .project-card:hover {
-  border-color: rgba(224, 179, 106, 0.45);
+  border-color: rgba(126, 169, 230, 0.45);
   background: rgba(255, 255, 255, 0.045);
   transform: translateY(-2px);
 }
@@ -1054,15 +1110,6 @@ body.home footer {
 
 /* 태블릿/모바일: 사진을 배경 전체로, 위에서 아래로 어둡게 */
 @media (max-width: 900px) {
-  .hero {
-    align-items: flex-start;
-  }
-
-  .hero-photo {
-    width: 100%;
-    background-position: center 70%;
-  }
-
   .hero-photo::before {
     background: linear-gradient(
       to bottom,
@@ -1115,7 +1162,7 @@ body.home footer {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #b8893e;
+  color: var(--kaist-blue);
 }
 
 .pending-page h1 {
@@ -1185,7 +1232,7 @@ body.home footer {
   font-weight: 700;
   text-align: center;
   color: #fff;
-  background: rgba(0, 65, 135, 0.92);
+  background: rgba(0, 65, 145, 0.92);
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -1213,6 +1260,10 @@ body.home footer {
   .cv-container {
     max-width: none;
     padding: 0 1rem;
+  }
+
+  .gallery-grid {
+    column-count: 1;
   }
 
   .publication-item.grid,
@@ -1247,4 +1298,29 @@ body.home footer {
   .poster-thumb {
     width: 72px;
   }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   CV: Presentations 안의 Oral / Poster 소제목
+──────────────────────────────────────────────────────────── */
+.cv-subheading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 0 1.25rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  color: #222;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.cv-count {
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--kaist-blue);
+  background: rgba(0, 65, 145, 0.08);
+  border-radius: 999px;
 }

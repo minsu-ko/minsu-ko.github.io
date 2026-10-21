@@ -2,20 +2,28 @@
 layout: default
 ---
 <article class="gallery-page">
-  <!-- 1) 타이틀 -->
-  <h1>{{ page.title }}</h1>
-
-  <!-- 2) 여기에 페이지 본문(content)을 삽입 -->
-  <div class="gallery-description">
-    {{ content }}
+  <div class="gallery-header">
+    <h1>{{ page.title }}</h1>
+    <div class="gallery-description">
+      {{ content }}
+    </div>
   </div>
 
-  <!-- 3) 기존 이미지 그리드 -->
-  <div class="gallery-container">
+  <!-- 캡션은 "Mon, YYYY. 설명" 형식 → 날짜와 설명을 나눠서 표시 -->
+  <div class="gallery-grid">
     {% for item in site.data.gallery %}
-      <figure class="gallery-item">
-        <img src="{{ item.image | relative_url }}" alt="{{ item.caption }}">
-        <figcaption>{{ item.caption }}</figcaption>
+      {%- assign parts = item.caption | split: '. ' -%}
+      {%- assign date = parts | first -%}
+      {%- assign desc_size = parts | size | minus: 1 -%}
+      {%- assign desc = parts | slice: 1, desc_size | join: '. ' -%}
+      <figure class="gallery-card">
+        <a href="{{ item.image | relative_url }}" target="_blank" rel="noopener">
+          <img src="{{ item.image | relative_url }}" alt="{{ item.caption }}" loading="lazy" />
+        </a>
+        <figcaption>
+          <span class="gallery-date">{{ date }}</span>
+          {{ desc }}
+        </figcaption>
       </figure>
     {% endfor %}
   </div>

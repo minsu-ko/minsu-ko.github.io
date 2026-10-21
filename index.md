@@ -27,15 +27,16 @@ body_class: home
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm7 1.5V9h5.5L13 3.5ZM8 13v1.5h8V13H8Zm0 3.5V18h8v-1.5H8Z" fill="currentColor"/></svg>
         Curriculum vitae
       </a>
-    </div>
-
-    <div class="hero-social">
-      <a href="https://scholar.google.com/citations?user=H4vZJ-QAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer" title="Google Scholar">
-        <img src="{{ '/assets/images/google-scholar.png' | relative_url }}" alt="Google Scholar" />
-      </a>
-      <a href="https://www.researchgate.net/profile/Minsu-Ko-3?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" title="ResearchGate">
-        <img src="{{ '/assets/images/researchgate.png' | relative_url }}" alt="ResearchGate" />
-      </a>
+      <div class="hero-social">
+        <a class="scholar" href="https://scholar.google.com/citations?user=H4vZJ-QAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm-7 10.2v4.3C5 19.4 8.1 21 12 21s7-1.6 7-3.5v-4.3l-7 3.8-7-3.8Z"/></svg>
+          Google Scholar
+        </a>
+        <a class="researchgate" href="https://www.researchgate.net/profile/Minsu-Ko-3?ev=hdr_xprf" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="currentColor"/><text x="3.6" y="17.5" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#0e1219">R</text><text x="13.2" y="11" font-family="Georgia, 'Times New Roman', serif" font-size="8.5" fill="#0e1219">G</text></svg>
+          ResearchGate
+        </a>
+      </div>
     </div>
   </div>
 

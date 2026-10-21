@@ -280,6 +280,8 @@ title: CV
 
 ## Presentations {#presentations}
 
+<h3 class="cv-subheading">Oral <span class="cv-count">5</span></h3>
+
 <div class="presentation-item grid">
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
@@ -317,6 +319,65 @@ title: CV
     <div class="presentation-location">📍 Taipei, Taiwan</div>
   </div>
 </div>
+
+<div class="presentation-item grid">
+  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
+  <div class="presentation-info">
+    <div class="presentation-title">
+      <span>Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP</span>
+    </div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
+    <div class="presentation-conference">
+      KAIST Undergrad. Research Program Workshop
+    </div>
+  </div>
+  <!-- 오른쪽 칸: 날짜, 도시 -->
+  <div class="presentation-meta">
+    <span class="presentation-tag oral">Oral</span>
+    <div class="presentation-date">Feb, 2025</div>
+    <div class="presentation-location">📍 Daejeon, South Korea</div>
+  </div>
+</div>
+
+<div class="presentation-item grid">
+  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
+  <div class="presentation-info">
+    <div class="presentation-title">
+      <a href="https://www.researchgate.net/publication/380104141_Characterization_of_Parallel-Connected_Josephson_Parametric_Amplifiers_for_Axion_Search_Experiments" target="_blank" rel="noopener">Characterization of Parallel-Connected Josephson Parametric Amplifiers for Axion Search Experiments</a>
+    </div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
+    <div class="presentation-conference">
+      The Korean Physical Society 2024 Spring Meeting
+    </div>
+  </div>
+  <!-- 오른쪽 칸: 날짜, 도시 -->
+  <div class="presentation-meta">
+    <span class="presentation-tag oral">Oral</span>
+    <div class="presentation-date">Apr, 2024</div>
+    <div class="presentation-location">📍 Daejeon, South Korea</div>
+  </div>
+</div>
+
+<div class="presentation-item grid">
+  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
+  <div class="presentation-info">
+    <div class="presentation-title">
+      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit</a>
+    </div>
+    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
+    <div class="presentation-conference">
+      2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)
+    </div>
+  </div>
+  <!-- 오른쪽 칸: 날짜, 도시 -->
+  <div class="presentation-meta">
+    <span class="presentation-tag oral">Oral</span>
+    <div class="presentation-date">Jun, 2023</div>
+    <div class="presentation-location">📍 Altai, Russia</div>
+  </div>
+</div>
+
+<h3 class="cv-subheading">Poster <span class="cv-count">4</span></h3>
 
 <div class="presentation-item grid">
   {% include poster-thumb.html img="/assets/posters/2025-kas-fall-poster.jpg" href="https://www.researchgate.net/publication/397884382_Optimized_Frontend_Components_of_the_Prototype_Ku-band_Receiver_for_the_COMAP-EoR_Experiment" %}
@@ -379,44 +440,6 @@ title: CV
 </div>
 
 <div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <span>Characterization of Josephson Parametric Amplifiers for Wideband Axion Search at CAPP</span>
-    </div>
-    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
-    <div class="presentation-conference">
-      KAIST Undergrad. Research Program Workshop
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag oral">Oral</span>
-    <div class="presentation-date">Feb, 2025</div>
-    <div class="presentation-location">📍 Daejeon, South Korea</div>
-  </div>
-</div>
-
-<div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <a href="https://www.researchgate.net/publication/380104141_Characterization_of_Parallel-Connected_Josephson_Parametric_Amplifiers_for_Axion_Search_Experiments" target="_blank" rel="noopener">Characterization of Parallel-Connected Josephson Parametric Amplifiers for Axion Search Experiments</a>
-    </div>
-    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
-    <div class="presentation-conference">
-      The Korean Physical Society 2024 Spring Meeting
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag oral">Oral</span>
-    <div class="presentation-date">Apr, 2024</div>
-    <div class="presentation-location">📍 Daejeon, South Korea</div>
-  </div>
-</div>
-
-<div class="presentation-item grid">
   {% include poster-thumb.html img="/assets/posters/2023-ltd20-poster.jpg" href="" %}
   <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
   <div class="presentation-info">
@@ -433,25 +456,6 @@ title: CV
     <span class="presentation-tag poster">Poster</span>
     <div class="presentation-date">Jul, 2023</div>
     <div class="presentation-location">📍 Daejeon, South Korea</div>
-  </div>
-</div>
-
-<div class="presentation-item grid">
-  <!-- 왼쪽 칸: 제목, 저자, 컨퍼런스 -->
-  <div class="presentation-info">
-    <div class="presentation-title">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10225136" target="_blank" rel="noopener">Expanding Scanning Frequency Range of Josephson Parametric Amplifier Axion Haloscope Readout with Schottky Diode Bias Circuit</a>
-    </div>
-    <div class="presentation-author"><span class="me">MinSu Ko</span> et al.</div>
-    <div class="presentation-conference">
-      2023 IEEE 24th International Conference of Young Professionals in Electron Devices and Materials (EDM)
-    </div>
-  </div>
-  <!-- 오른쪽 칸: 날짜, 도시 -->
-  <div class="presentation-meta">
-    <span class="presentation-tag oral">Oral</span>
-    <div class="presentation-date">Jun, 2023</div>
-    <div class="presentation-location">📍 Altai, Russia</div>
   </div>
 </div>
 
