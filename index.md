@@ -69,7 +69,7 @@ body_class: home
         <li>Experimental cosmology &amp; faint-signal astronomy</li>
         <li>Beyond Standard Model experiments</li>
         <li>Radio astronomy instrumentation</li>
-        <li>Superconducting quantum-limited amplifiers</li>
+        <li>Superconducting/quantum noise amplifiers</li>
       </ul>
     </aside>
   </div>
