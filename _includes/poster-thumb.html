@@ -1,7 +1,7 @@
 {%- comment -%}
   포스터 미리보기 썸네일. 클릭하면 ResearchGate 등 외부 링크로 이동합니다.
   사용법: {% include poster-thumb.html img="/assets/posters/파일명.jpg" href="https://www.researchgate.net/..." %}
-  - href를 비워두면 '아직 업로드되지 않음' 안내 페이지로 이동합니다.
+  - href를 비워두면 '아직 업로드되지 않음' 안내 페이지로 이동합니다. (호버 배지는 표시하지 않음)
   - 미리보기 jpg는 _scripts/make-poster-thumbs.sh 로 PDF에서 생성합니다. (PDF 원본은 커밋하지 않음)
 {%- endcomment -%}
 {%- if include.href and include.href != "" -%}
@@ -10,10 +10,12 @@
   {%- assign poster_external = true -%}
 {%- else -%}
   {%- assign poster_href = "/poster-pending.html" | relative_url -%}
-  {%- assign poster_badge = "Coming soon" -%}
+  {%- assign poster_badge = "" -%}
   {%- assign poster_external = false -%}
 {%- endif -%}
-<a class="poster-thumb{% unless poster_external %} pending{% endunless %}" href="{{ poster_href }}"{% if poster_external %} target="_blank" rel="noopener"{% endif %} title="{{ poster_badge }}">
+<a class="poster-thumb{% unless poster_external %} pending{% endunless %}" href="{{ poster_href }}"{% if poster_external %} target="_blank" rel="noopener"{% endif %}{% if poster_external %} title="{{ poster_badge }}"{% endif %}>
   <img src="{{ include.img | relative_url }}" alt="Poster preview" loading="lazy" />
+  {%- if poster_external %}
   <span class="poster-thumb-badge">{{ poster_badge }}</span>
+  {%- endif %}
 </a>

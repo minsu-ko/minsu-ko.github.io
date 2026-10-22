@@ -1253,10 +1253,6 @@ body.home footer {
   transition: opacity 0.2s;
 }
 
-.poster-thumb.pending .poster-thumb-badge {
-  background: rgba(60, 60, 60, 0.88);
-}
-
 .poster-thumb:hover .poster-thumb-badge,
 .poster-thumb:focus-visible .poster-thumb-badge {
   opacity: 1;
