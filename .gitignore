@@ -1,2 +1,5 @@
 # 포스터 원본 PDF는 공개하지 않음 (미리보기 jpg만 커밋)
 assets/posters/*.pdf
+
+# 에디터 설정 (JetBrains)
+.idea/
