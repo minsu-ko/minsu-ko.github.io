@@ -12,6 +12,14 @@
   venue: "Superconductor Science and Technology"
   date: "Feb, 2026"
 
+- title: "Recent Developments in Millimeter-Wave Receiver Technology for Radio Astronomy in South Korea"
+  url: "https://ieeexplore.ieee.org/document/11378679"
+  link_label: "IEEE"
+  doi: "10.1109/APMC65046.2025.11378679"
+  authors: "Jung-Won Lee et al."
+  venue: "IEEE Asia-Pacific Conference on Microwave"
+  date: "Dec, 2025"
+
 - title: "Approaching the Quantum Limit in Axion Detection at IBS-CAPP and IBS-DMAG"
   url: "https://www.mdpi.com/2673-9984/11/1/5"
   link_label: "MDPI"

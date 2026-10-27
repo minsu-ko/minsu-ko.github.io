@@ -6,10 +6,18 @@
 # ──────────────────────────────────────────────────────
 
 - type: oral
-  title: "Prototype Receiver Development for COMAP-EoR: Toward CO Line-Intensity Mapping at z=4.8–8.5"
-  url: ""
+  title: "Cryostat Assembly of the Prototype Ku-band Receiver for the COMAP-EoR Experiment"
+  url: "https://www.researchgate.net/publication/416918108_Cryostat_Assembly_of_the_Prototype_Ku-band_Receiver_for_the_COMAP-EoR_Experiment"
   authors: "MinSu Ko, Junhan Kim et al."
-  venue: "The Korean Physical Society 2026 Spring Meeting"
+  venue: "2026 114th KAS Fall Meeting"
+  date: "Oct, 2026"
+  location: "Gwacheon, South Korea"
+
+- type: oral
+  title: "Prototype Receiver Development for COMAP-EoR: Toward CO Line-Intensity Mapping at z=4.8–8.5"
+  url: "https://www.researchgate.net/publication/416909413_Prototype_Receiver_Development_for_COMAP-EoR_Toward_CO_Line-Intensity_Mapping_at_z48-85"
+  authors: "MinSu Ko, Junhan Kim et al."
+  venue: "Korean Physical Society 2026 Spring Meeting"
   date: "Apr, 2026"
   location: "Daejeon, South Korea"
 
@@ -33,7 +41,7 @@
   title: "Characterization of Parallel-Connected Josephson Parametric Amplifiers for Axion Search Experiments"
   url: "https://www.researchgate.net/publication/380104141_Characterization_of_Parallel-Connected_Josephson_Parametric_Amplifiers_for_Axion_Search_Experiments"
   authors: "MinSu Ko et al."
-  venue: "The Korean Physical Society 2024 Spring Meeting"
+  venue: "Korean Physical Society 2024 Spring Meeting"
   date: "Apr, 2024"
   location: "Daejeon, South Korea"
 
@@ -59,7 +67,7 @@
   title: "Development Status of a Prototype Ku-band Receiver for the COMAP-EoR Experiment"
   url: ""
   authors: "Wooseok Kang, MinSu Ko et al."
-  venue: "2025 Korean Astronomical Society Spring Meeting"
+  venue: "2025 KAS Spring Meeting: Celebrating the 60th Anniversary"
   date: "Apr, 2025"
   location: "Gyeongju, South Korea"
   poster_img: "/assets/posters/2025-kas-spring-poster2.jpg"
@@ -69,7 +77,7 @@
   title: "Lumped-element Josephson Parametric Amplifier For Wideband Axion Haloscope Readout of DMAG"
   url: "https://www.researchgate.net/publication/392017881_Lumped-element_Josephson_Parametric_Amplifier_For_Wideband_Axion_Haloscope_Readout_of_DMAG?_sg%5B0%5D=4r27y4lKkBfO1-BzC9oFmVeT0VvSZFmLxL_Qq6l1t6hJUEQ7PytDMaWOTHgpwiMDTB6ccGlaF2Sf66v2VA4b1NLIFLN37TEVWCFa3jpv.Lu0Q2wmuZW9fiXck2Yv2idtV7JllDP9WXHOJzfalXwqXH6WGzcz69AmbRhH0KQGq_oV0V-OBFZ36VnqRS8d_1A&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQifX0"
   authors: "MinSu Ko et al."
-  venue: "2025 Korean Astronomical Society Spring Meeting"
+  venue: "2025 KAS Spring Meeting: Celebrating the 60th Anniversary"
   date: "Apr, 2025"
   location: "Gyeongju, South Korea"
   poster_img: "/assets/posters/2025-kas-spring-poster1.jpg"
@@ -77,7 +85,7 @@
 
 - type: poster
   title: "Methods for Extending the Scanning Frequency Range of Flux-Driven Josephson Parametric Amplifiers Designed for Axion Search Experiments"
-  url: "https://ieeexplore.ieee.org/abstract/document/10225136"
+  url: "https://www.researchgate.net/publication/378967887_Methods_for_Extending_the_Scanning_Frequency_Range_of_Flux-Driven_Josephson_Parametric_Amplifiers_Designed_for_Axion_Search_Experiments"
   authors: "Jinmyeong Kim, MinSu Ko et al."
   venue: "The 20th International Conference on Low Temperature Detectors (LTD 20)"
   date: "Jul, 2023"
