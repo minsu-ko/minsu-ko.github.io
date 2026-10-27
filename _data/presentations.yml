@@ -2,7 +2,8 @@
 # CV > Presentations 목록 (위쪽일수록 최신). cv.md 에서 자동으로 표시됩니다.
 # type: oral | poster
 # url: 제목 링크(없으면 "")
-# poster_img / poster_url: 포스터 미리보기 이미지와 클릭 시 이동할 링크 (poster_url 이 ""이면 '아직 업로드 안 됨' 페이지)
+# poster_img / poster_url: 포스터 미리보기 이미지와 클릭 시 이동할 링크
+#   poster_url 이 ""이면 → url 이 ResearchGate 링크일 때 그걸 사용, 아니면 '아직 업로드 안 됨' 페이지
 # ──────────────────────────────────────────────────────
 
 - type: oral
@@ -91,4 +92,4 @@
   date: "Jul, 2023"
   location: "Daejeon, South Korea"
   poster_img: "/assets/posters/2023-ltd20-poster.jpg"
-  poster_url: ""
+  poster_url: "https://www.researchgate.net/publication/378967887_Methods_for_Extending_the_Scanning_Frequency_Range_of_Flux-Driven_Josephson_Parametric_Amplifiers_Designed_for_Axion_Search_Experiments"
